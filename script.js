@@ -2999,7 +2999,7 @@ function changeSolo(solo) {
     }
     if (solo == "coming-home") {
         document.querySelector(".solo-title").innerHTML = "Coming Home";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/coming-home.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Coming-home.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/avenged-sevenfold-coming-home-tab-s384658t2");
         document.querySelector(".solo-bpm").setAttribute("max", "178");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "178");
@@ -3035,7 +3035,7 @@ function changeSolo(solo) {
     }
     if (solo == "natural-born-killer") {
         document.querySelector(".solo-title").innerHTML = "Natural Born Killer";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/natural-born-killer.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Natural-born-killer.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/avenged-sevenfold-natural-born-killer-tab-s61352t0");
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
@@ -3060,7 +3060,7 @@ function changeSolo(solo) {
     }
     if (solo == "dear-god") {
         document.querySelector(".solo-title").innerHTML = "Dear God";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/dear-god.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Dear-god.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.youtube.com/watch?v=PmoTMuC-Tpc");
         document.querySelector(".solo-bpm").setAttribute("max", "69");
         document.querySelector(".solo-bpm").setAttribute("min", "30");
@@ -3074,7 +3074,7 @@ function changeSolo(solo) {
     }
     if (solo == "seize-the-day") {
         document.querySelector(".solo-title").innerHTML = "Seize The Day";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/seize-the-day.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Seize-the-day.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/avenged-sevenfold-seize-the-day-tab-s2117t2");
         document.querySelector(".solo-bpm").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "140");
@@ -3086,7 +3086,7 @@ function changeSolo(solo) {
     }
     if (solo == "sidewinder") {
         document.querySelector(".solo-title").innerHTML = "Sidewinder";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/sidewinder.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Sidewinder.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/avenged-sevenfold-sidewinder-tab-s22445t3");
         document.querySelector(".solo-bpm").setAttribute("max", "123");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "123");
@@ -3098,7 +3098,7 @@ function changeSolo(solo) {
     }
     if (solo == "betrayed") {
         document.querySelector(".solo-title").innerHTML = "Beetrayed";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/betrayed.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Betrayed.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/avenged-sevenfold-betrayed-tab-s22429t6");
         document.querySelector(".solo-bpm").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "130");
@@ -3110,7 +3110,7 @@ function changeSolo(solo) {
     }
     if (solo == "m.i.a.") {
         document.querySelector(".solo-title").innerHTML = "M.I.A.";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/mia.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Mia.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/avenged-sevenfold-mia-tab-s1689t4");
         document.querySelector(".solo-bpm").setAttribute("max", "164");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "164");
@@ -3122,7 +3122,7 @@ function changeSolo(solo) {
     }
     if (solo == "not-invincible") {
         document.querySelector(".solo-title").innerHTML = "Not Invincible";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/not-invincible.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Not-invincible.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/bullet-for-my-valentine-not-invincible-tab-s389108t2");
         document.querySelector(".solo-bpm").setAttribute("max", "175");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "175");
@@ -3134,7 +3134,7 @@ function changeSolo(solo) {
     }
     if (solo == "a-place-where-you-belong") {
         document.querySelector(".solo-title").innerHTML = "A Place Where You Belong";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/a-place-where-you-belong.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/A-place-where-you-belong.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/bullet-for-my-valentine-a-place-where-you-belong-tab-s60097t0");
         document.querySelector(".solo-bpm").setAttribute("max", "133");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "133");
@@ -3146,7 +3146,7 @@ function changeSolo(solo) {
     }
     if (solo == "the-last-fight") {
         document.querySelector(".solo-title").innerHTML = "The Last Fight";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/the-last-fight.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/The-last-fight.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/bullet-for-my-valentine-the-last-fight-tab-s59355t2");
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
@@ -3158,7 +3158,7 @@ function changeSolo(solo) {
     }
     if (solo == "waking-the-demon") {
         document.querySelector(".solo-title").innerHTML = "Waking The Demon";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/waking-the-demon.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Waking-the-demon.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/bullet-for-my-valentine-waking-the-demon-tab-s23507t0");
         document.querySelector(".solo-bpm").setAttribute("max", "127");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "127");
@@ -3170,7 +3170,7 @@ function changeSolo(solo) {
     }
     if (solo == "say-goodnight") {
         document.querySelector(".solo-title").innerHTML = "Say Goodnight";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/say-goodnight.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Say-goodnight.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/bullet-for-my-valentine-say-goodnight-tab-s23594t2");
         document.querySelector(".solo-bpm").setAttribute("max", "116");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "116");
@@ -3182,7 +3182,7 @@ function changeSolo(solo) {
     }
     if (solo == "the-poison") {
         document.querySelector(".solo-title").innerHTML = "The Poison";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/the-poison.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/The-poison.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/bullet-for-my-valentine-the-poison-tab-s27618t0");
         document.querySelector(".solo-bpm").setAttribute("max", "93");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "93");
@@ -3194,7 +3194,7 @@ function changeSolo(solo) {
     }
     if (solo == "blackened") {
         document.querySelector(".solo-title").innerHTML = "Blackened";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/blackened.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Blackened.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.songsterr.com/a/wsa/metallica-blackened-tab-s516t3");
         document.querySelector(".solo-bpm").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "129");
