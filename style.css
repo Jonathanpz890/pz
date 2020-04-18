@@ -176,7 +176,7 @@ table#menu-table {
     font-size: 3vw;
 }
 .timer-edit {
-    background: rgb(36, 155, 36) url("pencil-icon.png");
+    background: rgb(36, 155, 36) url("design/pencil-icon.png");
     background-size: 70%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -311,7 +311,7 @@ input::-webkit-inner-spin-button {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    background: url("play-button.png");
+    background: url("design/play-button.png");
     background-size: 62px;
     background-repeat: no-repeat;
     border: 0;
@@ -325,7 +325,7 @@ input::-webkit-inner-spin-button {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    background: url("pause-button.png");
+    background: url("design/pause-button.png");
     background-size: 62px;
     background-repeat: no-repeat;
     border: 0;
