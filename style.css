@@ -109,8 +109,8 @@ table#menu-table {
 }
 .skill:active {
     box-shadow: 0 0 0;
-    margin-top: calc(1vw + 0.5vw);
-    margin-bottom: calc(1vw - 0.5vw);
+    margin-top: 1.2vw;
+    margin-bottom: 0.2vw;
     color: black;
 }
 .extra-button {
