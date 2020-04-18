@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Practice</title>
+    <link rel="stylesheet" type="text/css" href="design/style.css">
+    <link rel="icon" type="image/x-icon" href="design/favicon.ico">
+</head>
+<body>
+    <div id="open-screen">
+        <h1 id="title">PZ Guitar Practice</h1>
+        <button id="start" onclick="start()">START</button>
+    </div>  
+
+    <div id="main-menu">
+    <table id="menu-table">
+        <tbody>
+            <tr>
+                <td> <button onclick="alternate()" class="skill alternate">Alternate Picking<br><br>10 Minutes</button>
+                </td>
+                <td> <button onclick="sweep()" class="skill sweeping">Sweep Picking<br><br>10 Minutes</button> </td>
+                <td> <button onclick="legato()" class="skill pentatonics">Legato Picking<br><br>10 Minutes</button>
+                </td>
+            </tr>
+            <tr>
+                <td> <button onclick="economy()" class="skill economy">Economy Picking<br><br>10 Minutes</button> </td>
+                <td> <button onclick="tapping()" class="skill tapping">Tapping<br><br>10 Minutes</button> </td>
+                <td> <button onclick="pentatonics()" class="skill pentatonics">Pentatonics<br><br>10 Minutes</button>
+                </td>
+            </tr>
+            <tr style="width: 400px">
+                <td colspan="3"><button class="skill extra-button" onclick="extras()">Extras</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+    <div id="skill-container">
+        <!--starts here-->
+    <script src="script.js"></script>
+</body>
+</html>
