@@ -2963,7 +2963,7 @@ function changeSolo(solo) {
     }
     if (solo == "heretic") {
         document.querySelector(".solo-title").innerHTML = "Heretic";
-        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/heretic.m4a" type="audio/mpeg">';
+        document.querySelector(".audio").innerHTML = '                    <audio controls class="solo-audio"> <source src="Design/Solos/Audio/Heretic.m4a" type="audio/mpeg">';
         document.querySelector(".tabs > a").setAttribute("href", "https://www.youtube.com/watch?v=0NgB8ZPkGhw");
         document.querySelector(".solo-bpm").setAttribute("max", "136");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "136");
