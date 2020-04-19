@@ -993,6 +993,7 @@ function noteRecStart(back) {
         document.querySelector(".note-rec>p").innerHTML = "Points: " + pitchRecPoints;
         document.querySelector(".note-rec-start").innerHTML = "Stop";
         document.querySelector(".note-rec-start").style.backgroundImage = "linear-gradient(to bottom left, red, rgb(139, 4, 4)";
+        document.querySelector(".note-imate").style.display = "block";
         document.querySelector(".rec-title").style.display = "none";
         noteRecNextLevel(pitchRecDifficulty);
     } else {
@@ -1003,6 +1004,7 @@ function noteRecStart(back) {
         document.querySelector(".rec-title").style.display = "block";
         document.querySelector(".rec-title").innerHTML = "Note Recognition - " + pitchRecDifficulty;
         interval = null;
+        document.querySelector(".note-imate").style.display = "none";
         document.querySelector(".note-image").setAttribute("src", "");
         document.querySelector(".c").innerHTML = noteName.c;
         document.querySelector(".d").innerHTML = noteName.d;
