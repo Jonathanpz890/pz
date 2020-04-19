@@ -2944,7 +2944,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "184");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/second-heartbeat1.png"> <img class="tab-images" src="Design/solos/images/second-heartbeat2.png"> <img class="tab-images" src="Design/solos/images/second-heartbeat3.png"> <img class="tab-images" src="Design/solos/images/second-heartbeat4.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/second-heartbeat1.png"> <img class="tab-images" src="Design/Solos/Images/second-heartbeat2.png"> <img class="tab-images" src="Design/Solos/Images/second-heartbeat3.png"> <img class="tab-images" src="Design/Solos/Images/second-heartbeat4.png">';
         soloBpm = 184;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2956,7 +2956,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "97");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "97");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "97");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/paradigm1.png"> <img class="tab-images" src="Design/solos/images/paradigm2.png"> <img class="tab-images" src="Design/solos/images/paradigm3.png"> <img class="tab-images" src="Design/solos/images/paradigm4.png"> <img class="tab-images" src="Design/solos/images/paradigm5.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/paradigm1.png"> <img class="tab-images" src="Design/Solos/Images/paradigm2.png"> <img class="tab-images" src="Design/Solos/Images/paradigm3.png"> <img class="tab-images" src="Design/Solos/Images/paradigm4.png"> <img class="tab-images" src="Design/Solos/Images/paradigm5.png">';
         soloBpm = 97;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2968,7 +2968,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "136");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "136");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "136");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/heretic1.png"> <img class="tab-images" src="Design/solos/images/heretic2.png"> <img class="tab-images" src="Design/solos/images/heretic3.png"> <img class="tab-images" src="Design/solos/images/heretic4.png"> <img class="tab-images" src="Design/solos/images/heretic5.png"> <img class="tab-images" src="Design/solos/images/heretic6.png"> <img class="tab-images" src="Design/solos/images/heretic7.png"> <img class="tab-images" src="Design/solos/images/heretic8.png"> <img class="tab-images" src="Design/solos/images/heretic9.png"> <img class="tab-images" src="Design/solos/images/heretic10.png"> <img class="tab-images" src="Design/solos/images/heretic11.png"> <img class="tab-images" src="Design/solos/images/heretic12.png"> <img class="tab-images" src="Design/solos/images/heretic13.png"> <img class="tab-images" src="Design/solos/images/heretic14.png"> <img class="tab-images" src="Design/solos/images/heretic15.png"> <img class="tab-images" src="Design/solos/images/heretic16.png"> <img class="tab-images" src="Design/solos/images/heretic17.png"> <img class="tab-images" src="Design/solos/images/heretic18.png"> <img class="tab-images" src="Design/solos/images/heretic19.png"> <img class="tab-images" src="Design/solos/images/heretic20.png"> </div>';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/heretic1.png"> <img class="tab-images" src="Design/Solos/Images/heretic2.png"> <img class="tab-images" src="Design/Solos/Images/heretic3.png"> <img class="tab-images" src="Design/Solos/Images/heretic4.png"> <img class="tab-images" src="Design/Solos/Images/heretic5.png"> <img class="tab-images" src="Design/Solos/Images/heretic6.png"> <img class="tab-images" src="Design/Solos/Images/heretic7.png"> <img class="tab-images" src="Design/Solos/Images/heretic8.png"> <img class="tab-images" src="Design/Solos/Images/heretic9.png"> <img class="tab-images" src="Design/Solos/Images/heretic10.png"> <img class="tab-images" src="Design/Solos/Images/heretic11.png"> <img class="tab-images" src="Design/Solos/Images/heretic12.png"> <img class="tab-images" src="Design/Solos/Images/heretic13.png"> <img class="tab-images" src="Design/Solos/Images/heretic14.png"> <img class="tab-images" src="Design/Solos/Images/heretic15.png"> <img class="tab-images" src="Design/Solos/Images/heretic16.png"> <img class="tab-images" src="Design/Solos/Images/heretic17.png"> <img class="tab-images" src="Design/Solos/Images/heretic18.png"> <img class="tab-images" src="Design/Solos/Images/heretic19.png"> <img class="tab-images" src="Design/Solos/Images/heretic20.png"> </div>';
         soloBpm = 136;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2980,7 +2980,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "134");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/the-stage1.png"> <img class="tab-images" src="Design/solos/images/the-stage2.png"> <img class="tab-images" src="Design/solos/images/the-stage3.png"> <img class="tab-images" src="Design/solos/images/the-stage4.png"> <img class="tab-images" src="Design/solos/images/the-stage5.png"> <img class="tab-images" src="Design/solos/images/the-stage6.png"> <img class="tab-images" src="Design/solos/images/the-stage7.png"> <img class="tab-images" src="Design/solos/images/the-stage8.png"> <img class="tab-images" src="Design/solos/images/the-stage9.png"> <img class="tab-images" src="Design/solos/images/the-stage10.png"> <img class="tab-images" src="Design/solos/images/the-stage11.png"> <img class="tab-images" src="Design/solos/images/the-stage12.png"> <img class="tab-images" src="Design/solos/images/the-stage13.png"> <img class="tab-images" src="Design/solos/images/the-stage14.png"> <img class="tab-images" src="Design/solos/images/the-stage15.png"> </div>';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/the-stage1.png"> <img class="tab-images" src="Design/Solos/Images/the-stage2.png"> <img class="tab-images" src="Design/Solos/Images/the-stage3.png"> <img class="tab-images" src="Design/Solos/Images/the-stage4.png"> <img class="tab-images" src="Design/Solos/Images/the-stage5.png"> <img class="tab-images" src="Design/Solos/Images/the-stage6.png"> <img class="tab-images" src="Design/Solos/Images/the-stage7.png"> <img class="tab-images" src="Design/Solos/Images/the-stage8.png"> <img class="tab-images" src="Design/Solos/Images/the-stage9.png"> <img class="tab-images" src="Design/Solos/Images/the-stage10.png"> <img class="tab-images" src="Design/Solos/Images/the-stage11.png"> <img class="tab-images" src="Design/Solos/Images/the-stage12.png"> <img class="tab-images" src="Design/Solos/Images/the-stage13.png"> <img class="tab-images" src="Design/Solos/Images/the-stage14.png"> <img class="tab-images" src="Design/Solos/Images/the-stage15.png"> </div>';
         soloBpm = 134;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2992,7 +2992,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "134");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/crimson-day1.png"> <img class="tab-images" src="Design/solos/images/crimson-day2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/crimson-day1.png"> <img class="tab-images" src="Design/Solos/Images/crimson-day2.png">';
         soloBpm = 134;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3004,7 +3004,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "178");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "178");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "178");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/coming-home1.png"> <img class="tab-images" src="Design/solos/images/coming-home2.png"> <img class="tab-images" src="Design/solos/images/coming-home3.png"> <img class="tab-images" src="Design/solos/images/coming-home4.png"> <img class="tab-images" src="Design/solos/images/coming-home5.png"> <img class="tab-images" src="Design/solos/images/coming-home6.png"> <img class="tab-images" src="Design/solos/images/coming-home7.png"> <img class="tab-images" src="Design/solos/images/coming-home8.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/coming-home1.png"> <img class="tab-images" src="Design/Solos/Images/coming-home2.png"> <img class="tab-images" src="Design/Solos/Images/coming-home3.png"> <img class="tab-images" src="Design/Solos/Images/coming-home4.png"> <img class="tab-images" src="Design/Solos/Images/coming-home5.png"> <img class="tab-images" src="Design/Solos/Images/coming-home6.png"> <img class="tab-images" src="Design/Solos/Images/coming-home7.png"> <img class="tab-images" src="Design/Solos/Images/coming-home8.png">';
         soloBpm = 178;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3016,7 +3016,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "129");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/nightmare1.png"> <img class="tab-images" src="Design/solos/images/nightmare2.png"> <img class="tab-images" src="Design/solos/images/nightmare3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/nightmare1.png"> <img class="tab-images" src="Design/Solos/Images/nightmare2.png"> <img class="tab-images" src="Design/Solos/Images/nightmare3.png">';
         soloBpm = 129;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3028,7 +3028,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "138");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "138");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "138");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/buried-alive1.png"> <img class="tab-images" src="Design/solos/images/buried-alive2.png"> <img class="tab-images" src="Design/solos/images/buried-alive3.png"> <img class="tab-images" src="Design/solos/images/buried-alive4.png"> <img class="tab-images" src="Design/solos/images/buried-alive5.png"> <img class="tab-images" src="Design/solos/images/buried-alive6.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/buried-alive1.png"> <img class="tab-images" src="Design/Solos/Images/buried-alive2.png"> <img class="tab-images" src="Design/Solos/Images/buried-alive3.png"> <img class="tab-images" src="Design/Solos/Images/buried-alive4.png"> <img class="tab-images" src="Design/Solos/Images/buried-alive5.png"> <img class="tab-images" src="Design/Solos/Images/buried-alive6.png">';
         soloBpm = 138;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3040,7 +3040,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "184");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/natural-born-killer1.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer2.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer3.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer4.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer5.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer6.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer7.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/natural-born-killer1.png"> <img class="tab-images" src="Design/Solos/Images/natural-born-killer2.png"> <img class="tab-images" src="Design/Solos/Images/natural-born-killer3.png"> <img class="tab-images" src="Design/Solos/Images/natural-born-killer4.png"> <img class="tab-images" src="Design/Solos/Images/natural-born-killer5.png"> <img class="tab-images" src="Design/Solos/Images/natural-born-killer6.png"> <img class="tab-images" src="Design/Solos/Images/natural-born-killer7.png">';
         soloBpm = 184;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3053,7 +3053,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "130");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/victim1.png"> <img class="tab-images" src="Design/solos/images/victim2.png"> <img class="tab-images" src="Design/solos/images/victim3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/victim1.png"> <img class="tab-images" src="Design/Solos/Images/victim2.png"> <img class="tab-images" src="Design/Solos/Images/victim3.png">';
         soloBpm = 130;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3067,7 +3067,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "69");
         document.querySelector(".solo-bpm-scrubber").setAttribute("min", "30");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "69");
-        document.querySelector(".guitar-1").innerHTML = '<video width="100%" height="100%" controls> <source src="Design/solos/images/dear-god.mp4"> </video>';
+        document.querySelector(".guitar-1").innerHTML = '<video width="100%" height="100%" controls> <source src="Design/Solos/Images/dear-god.mp4"> </video>';
         soloBpm = 69;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3079,7 +3079,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "140");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/seize-the-day1.png"> <img class="tab-images" src="Design/solos/images/seize-the-day2.png"> <img class="tab-images" src="Design/solos/images/seize-the-day3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/seize-the-day1.png"> <img class="tab-images" src="Design/Solos/Images/seize-the-day2.png"> <img class="tab-images" src="Design/Solos/Images/seize-the-day3.png">';
         soloBpm = 140;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3091,7 +3091,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "123");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "123");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "123");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/sidewinder1.png"> <img class="tab-images" src="Design/solos/images/sidewinder2.png"> <img class="tab-images" src="Design/solos/images/sidewinder3.png"> <img class="tab-images" src="Design/solos/images/sidewinder4.png"> <img class="tab-images" src="Design/solos/images/sidewinder5.png"> <img class="tab-images" src="Design/solos/images/sidewinder6.png"> <img class="tab-images" src="Design/solos/images/sidewinder7.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/sidewinder1.png"> <img class="tab-images" src="Design/Solos/Images/sidewinder2.png"> <img class="tab-images" src="Design/Solos/Images/sidewinder3.png"> <img class="tab-images" src="Design/Solos/Images/sidewinder4.png"> <img class="tab-images" src="Design/Solos/Images/sidewinder5.png"> <img class="tab-images" src="Design/Solos/Images/sidewinder6.png"> <img class="tab-images" src="Design/Solos/Images/sidewinder7.png">';
         soloBpm = 123;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3103,7 +3103,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "130");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/betrayed1.png"> <img class="tab-images" src="Design/solos/images/betrayed2.png"> <img class="tab-images" src="Design/solos/images/betrayed3.png"> <img class="tab-images" src="Design/solos/images/betrayed4.png"> <img class="tab-images" src="Design/solos/images/betrayed5.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/betrayed1.png"> <img class="tab-images" src="Design/Solos/Images/betrayed2.png"> <img class="tab-images" src="Design/Solos/Images/betrayed3.png"> <img class="tab-images" src="Design/Solos/Images/betrayed4.png"> <img class="tab-images" src="Design/Solos/Images/betrayed5.png">';
         soloBpm = 130;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3115,7 +3115,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "164");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "164");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "164");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/mia1.png"> <img class="tab-images" src="Design/solos/images/mia2.png"> <img class="tab-images" src="Design/solos/images/mia3.png"> <img class="tab-images" src="Design/solos/images/mia4.png"> <img class="tab-images" src="Design/solos/images/mia5.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/mia1.png"> <img class="tab-images" src="Design/Solos/Images/mia2.png"> <img class="tab-images" src="Design/Solos/Images/mia3.png"> <img class="tab-images" src="Design/Solos/Images/mia4.png"> <img class="tab-images" src="Design/Solos/Images/mia5.png">';
         soloBpm = 164;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3127,7 +3127,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "175");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "175");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "175");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/not-invincible1.png"> <img class="tab-images" src="Design/solos/images/not-invincible2.png"> <img class="tab-images" src="Design/solos/images/not-invincible3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/not-invincible1.png"> <img class="tab-images" src="Design/Solos/Images/not-invincible2.png"> <img class="tab-images" src="Design/Solos/Images/not-invincible3.png">';
         soloBpm = 175;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3139,7 +3139,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "133");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "133");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "133");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/a-place-where-you-belong1.png"> <img class="tab-images" src="Design/solos/images/a-place-where-you-belong2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/a-place-where-you-belong1.png"> <img class="tab-images" src="Design/Solos/Images/a-place-where-you-belong2.png">';
         soloBpm = 133;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3151,7 +3151,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "184");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/the-last-fight1.png"> <img class="tab-images" src="Design/solos/images/the-last-fight2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/the-last-fight1.png"> <img class="tab-images" src="Design/Solos/Images/the-last-fight2.png">';
         soloBpm = 184;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3163,7 +3163,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "127");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "127");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "127");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/waking-the-demon1.png"> <img class="tab-images" src="Design/solos/images/waking-the-demon2.png"> <img class="tab-images" src="Design/solos/images/waking-the-demon3.png"> <img class="tab-images" src="Design/solos/images/waking-the-demon4.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/waking-the-demon1.png"> <img class="tab-images" src="Design/Solos/Images/waking-the-demon2.png"> <img class="tab-images" src="Design/Solos/Images/waking-the-demon3.png"> <img class="tab-images" src="Design/Solos/Images/waking-the-demon4.png">';
         soloBpm = 127;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3175,7 +3175,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "116");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "116");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "116");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/say-goodnight1.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/say-goodnight1.png">';
         soloBpm = 116;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3187,7 +3187,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "93");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "93");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "93");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/the-poison1.png"> <img class="tab-images" src="Design/solos/images/the-poison2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/the-poison1.png"> <img class="tab-images" src="Design/Solos/Images/the-poison2.png">';
         soloBpm = 93;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3199,7 +3199,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "129");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/blackened1.png"> <img class="tab-images" src="Design/solos/images/blackened2.png"> <img class="tab-images" src="Design/solos/images/blackened3.png"> <img class="tab-images" src="Design/solos/images/blackened4.png"> <img class="tab-images" src="Design/solos/images/blackened5.png"> <img class="tab-images" src="Design/solos/images/blackened6.png"> <img class="tab-images" src="Design/solos/images/blackened7.png"> <img class="tab-images" src="Design/solos/images/blackened8.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/blackened1.png"> <img class="tab-images" src="Design/Solos/Images/blackened2.png"> <img class="tab-images" src="Design/Solos/Images/blackened3.png"> <img class="tab-images" src="Design/Solos/Images/blackened4.png"> <img class="tab-images" src="Design/Solos/Images/blackened5.png"> <img class="tab-images" src="Design/Solos/Images/blackened6.png"> <img class="tab-images" src="Design/Solos/Images/blackened7.png"> <img class="tab-images" src="Design/Solos/Images/blackened8.png">';
         soloBpm = 129;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3213,7 +3213,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "92");
         document.querySelector(".solo-bpm-scrubber").setAttribute("min", "30");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "92");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/nothin-else-matters.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/Solos/Images/nothin-else-matters.png">';
         soloBpm = 92;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
