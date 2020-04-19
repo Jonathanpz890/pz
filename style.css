@@ -209,7 +209,7 @@ table#menu-table {
     margin: 0.7vw auto;
     width: 90%;
     height: 10%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     border: 0;
     border-radius: 0.78vw;
     -webkit-border-radius: 0.78vw;
@@ -533,6 +533,9 @@ visibility: hidden;
     z-index: 1;
     left: 22%;
     font-size: 1.75vw;
+}
+#note-rec > .skill-options > h1 {
+    font-size: 3.5vw;
 }
 .difficulty-easy-button:hover .tooltip-text {
     visibility: visible;
