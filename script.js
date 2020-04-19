@@ -2,8 +2,8 @@ var minutes = "10";
 var seconds = "00";
 var interval = null;
 var timerGoing = false;
-var alarm = new Audio("design/alarm.mp3");
-var metro = new Audio("design/metro.mp3");
+var alarm = new Audio("Design/alarm.mp3");
+var metro = new Audio("Design/metro.mp3");
 var bpm = "";
 var soloBpm = "";
 var metroSpeed = "";
@@ -199,7 +199,7 @@ function sweep() {
 }
 function economy() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="economy-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Economy Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons economy-syn-button">SYN\'s Etude</button><button class="skill-option-buttons economy-major-button">Major Scales</button><button class="skill-option-buttons economy-minor-button">Minor Scales</button><button class="skill-option-buttons economy-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display economy-syn">            <h1 class="syn-title">Economy Picking I</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-i.106/"> <img class="tab-images" src="design/syn/economy1.png"> </a> <h1 class="syn-title">Economy Picking II</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-ii.107/"> <img class="tab-images" src="design/syn/economy2.png"> </a> <h1 class="syn-title">Economy Picking III</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-iii.108/"> <img class="tab-images" src="design/syn/economy3.png"> </a> <h1 class="syn-title">Economy Picking IV</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-iv.109/"> <img class="tab-images" src="design/syn/economy4.png"> </a> <h1 class="syn-title">Economy Picking V</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-v.110/"> <img class="tab-images" src="design/syn/economy5.png"> </a> <h1 class="syn-title">Economy Picking VI</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-vi.111/"> <img class="tab-images" src="design/syn/economy6-1.png"><img class="tab-images" src="design/syn/economy6-2.png"> </a> <h1 class="syn-title">Economy Picking VII</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-vii.112/"> <img class="tab-images" src="design/syn/economy7.png"> </a> <h1 class="syn-title">Economy Picking VIII</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-viii.113/"> <img class="tab-images" src="design/syn/economy8.png"> </a> <h1 class="syn-title">Economy Picking IX</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-ix.114/"> <img class="tab-images" src="design/syn/economy9.png"> </a> <h1 class="syn-title">Economy Picking X</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-x.115/"> <img class="tab-images" src="design/syn/economy10.png"> </a></div><div class="inner-display economy-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>'
+    document.querySelector("#skill-container").innerHTML = '<div id="economy-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Economy Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons economy-syn-button">SYN\'s Etude</button><button class="skill-option-buttons economy-major-button">Major Scales</button><button class="skill-option-buttons economy-minor-button">Minor Scales</button><button class="skill-option-buttons economy-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display economy-syn">            <h1 class="syn-title">Economy Picking I</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-i.106/"> <img class="tab-images" src="Design/syn/economy1.png"> </a> <h1 class="syn-title">Economy Picking II</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-ii.107/"> <img class="tab-images" src="Design/syn/economy2.png"> </a> <h1 class="syn-title">Economy Picking III</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-iii.108/"> <img class="tab-images" src="Design/syn/economy3.png"> </a> <h1 class="syn-title">Economy Picking IV</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-iv.109/"> <img class="tab-images" src="Design/syn/economy4.png"> </a> <h1 class="syn-title">Economy Picking V</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-v.110/"> <img class="tab-images" src="Design/syn/economy5.png"> </a> <h1 class="syn-title">Economy Picking VI</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-vi.111/"> <img class="tab-images" src="Design/syn/economy6-1.png"><img class="tab-images" src="Design/syn/economy6-2.png"> </a> <h1 class="syn-title">Economy Picking VII</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-vii.112/"> <img class="tab-images" src="Design/syn/economy7.png"> </a> <h1 class="syn-title">Economy Picking VIII</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-viii.113/"> <img class="tab-images" src="Design/syn/economy8.png"> </a> <h1 class="syn-title">Economy Picking IX</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-ix.114/"> <img class="tab-images" src="Design/syn/economy9.png"> </a> <h1 class="syn-title">Economy Picking X</h1> <a target="_blank" href="https://syngates.com/lessons/economy-picking-x.115/"> <img class="tab-images" src="Design/syn/economy10.png"> </a></div><div class="inner-display economy-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>'
     updateListener();
     document.querySelector(".economy-syn-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -232,7 +232,7 @@ function economy() {
 }
 function tapping() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="tapping"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Tapping</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons tapping-syn-button">SYN\'s Etude</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display tapping-syn">            <h1 class="syn-title">Tapping I</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-i.136/"> <img class="tab-images" src="design/syn/tapping1.png"> </a> <h1 class="syn-title">Tapping II</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-ii.137/"> <img class="tab-images" src="design/syn/tapping2-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-ii.137/"> <img class="tab-images" src="design/syn/tapping2-2.png"> </a> <h1 class="syn-title">Tapping III</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-iii.138/"> <img class="tab-images" src="design/syn/tapping3-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-iii.138/"> <img class="tab-images" src="design/syn/tapping3-2.png"> </a> <h1 class="syn-title">Tapping IV</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-iv.139/"> <img class="tab-images" src="design/syn/tapping4.png"> </a> <h1 class="syn-title">Tapping V</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-v.140/"> <img class="tab-images" src="design/syn/tapping5.png"> </a> <h1 class="syn-title">Tapping VI</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-vi.141/"> <img class="tab-images" src="design/syn/tapping6.png"> </a> <h1 class="syn-title">Tapping VII</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-vii.142/"> <img class="tab-images" src="design/syn/tapping7-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-vii.142/"> <img class="tab-images" src="design/syn/tapping7-2.png"> </a> <h1 class="syn-title">Tapping VIII</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-viii.143/"> <img class="tab-images" src="design/syn/tapping8-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-viii.143/"> <img class="tab-images" src="design/syn/tapping8-2.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-viii.143/"> <img class="tab-images" src="design/syn/tapping8-3.png"> </a> <h1 class="syn-title">Tapping IX</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-ix.144/"> <img class="tab-images" src="design/syn/tapping9-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-ix.144/"> <img class="tab-images" src="design/syn/tapping9-2.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-ix.144/"> <img class="tab-images" src="design/syn/tapping9-3.png"> </a> <h1 class="syn-title">Tapping X</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-x.145/"> <img class="tab-images" src="design/syn/tapping10-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-x.145/"> <img class="tab-images" src="design/syn/tapping10-2.png"> </a></div></div></div>';
+    document.querySelector("#skill-container").innerHTML = '<div id="tapping"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Tapping</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons tapping-syn-button">SYN\'s Etude</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display tapping-syn">            <h1 class="syn-title">Tapping I</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-i.136/"> <img class="tab-images" src="Design/syn/tapping1.png"> </a> <h1 class="syn-title">Tapping II</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-ii.137/"> <img class="tab-images" src="Design/syn/tapping2-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-ii.137/"> <img class="tab-images" src="Design/syn/tapping2-2.png"> </a> <h1 class="syn-title">Tapping III</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-iii.138/"> <img class="tab-images" src="Design/syn/tapping3-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-iii.138/"> <img class="tab-images" src="Design/syn/tapping3-2.png"> </a> <h1 class="syn-title">Tapping IV</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-iv.139/"> <img class="tab-images" src="Design/syn/tapping4.png"> </a> <h1 class="syn-title">Tapping V</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-v.140/"> <img class="tab-images" src="Design/syn/tapping5.png"> </a> <h1 class="syn-title">Tapping VI</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-vi.141/"> <img class="tab-images" src="Design/syn/tapping6.png"> </a> <h1 class="syn-title">Tapping VII</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-vii.142/"> <img class="tab-images" src="Design/syn/tapping7-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-vii.142/"> <img class="tab-images" src="Design/syn/tapping7-2.png"> </a> <h1 class="syn-title">Tapping VIII</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-viii.143/"> <img class="tab-images" src="Design/syn/tapping8-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-viii.143/"> <img class="tab-images" src="Design/syn/tapping8-2.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-viii.143/"> <img class="tab-images" src="Design/syn/tapping8-3.png"> </a> <h1 class="syn-title">Tapping IX</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-ix.144/"> <img class="tab-images" src="Design/syn/tapping9-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-ix.144/"> <img class="tab-images" src="Design/syn/tapping9-2.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-ix.144/"> <img class="tab-images" src="Design/syn/tapping9-3.png"> </a> <h1 class="syn-title">Tapping X</h1> <a target="_blank" href="https://syngates.com/lessons/tapping-x.145/"> <img class="tab-images" src="Design/syn/tapping10-1.png"> </a> <a target="_blank" href="https://syngates.com/lessons/tapping-x.145/"> <img class="tab-images" src="Design/syn/tapping10-2.png"> </a></div></div></div>';
     updateListener();
 
     document.querySelector(".tapping-syn-button").addEventListener("click", function() {
@@ -243,7 +243,7 @@ function tapping() {
 }
 function legato() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="legato-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Legato Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons legato-syn-button">SYN\'s Etude</button><button class="skill-option-buttons legato-major-button">Major Scales</button><button class="skill-option-buttons legato-minor-button">Minor Scales</button><button class="skill-option-buttons legato-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display legato-syn">            <h1 class="syn-title">Legato Picking I</h1> <a target="_blank" href="https://syngates.com/lessons/legato-i.116/"> <img class="tab-images" src="design/syn/legato1.png"> </a> <h1 class="syn-title">Legato Picking II</h1> <a target="_blank" href="https://syngates.com/lessons/legato-ii.117/"> <img class="tab-images" src="design/syn/legato2.png"> </a> <h1 class="syn-title">Legato Picking III</h1> <a target="_blank" href="https://syngates.com/lessons/legato-iii.118/"> <img class="tab-images" src="design/syn/legato3.png"> </a> <h1 class="syn-title">Legato Picking IV</h1> <a target="_blank" href="https://syngates.com/lessons/legato-iv.119/"> <img class="tab-images" src="design/syn/legato4.png"> </a> <h1 class="syn-title">Legato Picking V</h1> <a target="_blank" href="https://syngates.com/lessons/legato-v.120/"> <img class="tab-images" src="design/syn/legato5.png"> </a> <h1 class="syn-title">Legato Picking VI</h1> <a target="_blank" href="https://syngates.com/lessons/legato-vi.121/"> <img class="tab-images" src="design/syn/legato6.png"> </a> <h1 class="syn-title">Legato Picking VII</h1> <a target="_blank" href="https://syngates.com/lessons/legato-vii.122/"> <img class="tab-images" src="design/syn/legato7.png"> </a> <h1 class="syn-title">Legato Picking VIII</h1> <a target="_blank" href="https://syngates.com/lessons/legato-viii.123/"> <img class="tab-images" src="design/syn/legato8.png"> </a> <h1 class="syn-title">Legato Picking IX</h1> <a target="_blank" href="https://syngates.com/lessons/legato-ix.124/"> <img class="tab-images" src="design/syn/legato9.png"> </a> <h1 class="syn-title">Legato Picking X</h1> <a target="_blank" href="https://syngates.com/lessons/legato-x.125/"> <img class="tab-images" src="design/syn/legato10-1.png"> <img class="tab-images" src="design//syn/legato10-2.png"></div><div class="inner-display legato-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>'
+    document.querySelector("#skill-container").innerHTML = '<div id="legato-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Legato Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons legato-syn-button">SYN\'s Etude</button><button class="skill-option-buttons legato-major-button">Major Scales</button><button class="skill-option-buttons legato-minor-button">Minor Scales</button><button class="skill-option-buttons legato-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display legato-syn">            <h1 class="syn-title">Legato Picking I</h1> <a target="_blank" href="https://syngates.com/lessons/legato-i.116/"> <img class="tab-images" src="Design/syn/legato1.png"> </a> <h1 class="syn-title">Legato Picking II</h1> <a target="_blank" href="https://syngates.com/lessons/legato-ii.117/"> <img class="tab-images" src="Design/syn/legato2.png"> </a> <h1 class="syn-title">Legato Picking III</h1> <a target="_blank" href="https://syngates.com/lessons/legato-iii.118/"> <img class="tab-images" src="Design/syn/legato3.png"> </a> <h1 class="syn-title">Legato Picking IV</h1> <a target="_blank" href="https://syngates.com/lessons/legato-iv.119/"> <img class="tab-images" src="Design/syn/legato4.png"> </a> <h1 class="syn-title">Legato Picking V</h1> <a target="_blank" href="https://syngates.com/lessons/legato-v.120/"> <img class="tab-images" src="Design/syn/legato5.png"> </a> <h1 class="syn-title">Legato Picking VI</h1> <a target="_blank" href="https://syngates.com/lessons/legato-vi.121/"> <img class="tab-images" src="Design/syn/legato6.png"> </a> <h1 class="syn-title">Legato Picking VII</h1> <a target="_blank" href="https://syngates.com/lessons/legato-vii.122/"> <img class="tab-images" src="Design/syn/legato7.png"> </a> <h1 class="syn-title">Legato Picking VIII</h1> <a target="_blank" href="https://syngates.com/lessons/legato-viii.123/"> <img class="tab-images" src="Design/syn/legato8.png"> </a> <h1 class="syn-title">Legato Picking IX</h1> <a target="_blank" href="https://syngates.com/lessons/legato-ix.124/"> <img class="tab-images" src="Design/syn/legato9.png"> </a> <h1 class="syn-title">Legato Picking X</h1> <a target="_blank" href="https://syngates.com/lessons/legato-x.125/"> <img class="tab-images" src="Design/syn/legato10-1.png"> <img class="tab-images" src="Design//syn/legato10-2.png"></div><div class="inner-display legato-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>'
     updateListener();
     document.querySelector(".legato-syn-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -276,7 +276,7 @@ function legato() {
 }
 function pentatonics() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="pentatonics"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Pentatonic Scales</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button></div> </div> </div<div><div class="skill-options"><button class="skill-option-buttons pentatonics-syn-button">SYN\'s Etude</button><button class="skill-option-buttons pentatonics-scales-button">Scales</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display pentatonics-syn"><h1 class="syn-title">Pentatonic I</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-i.116/"> <img class="tab-images" src="design/syn/pentatonics1.png"> </a> <h1 class="syn-title">Pentatonic II</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-ii.117/"> <img class="tab-images" src="design/syn/pentatonics2.png"> </a> <h1 class="syn-title">Pentatonic III</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-iii.118/"> <img class="tab-images" src="design/syn/pentatonics3.png"> </a> <h1 class="syn-title">Pentatonic IV</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-iv.119/"> <img class="tab-images" src="design/syn/pentatonics4.png"> </a> <h1 class="syn-title">Pentatonic V</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-v.120/"> <img class="tab-images" src="design/syn/pentatonics5.png"> </a> <h1 class="syn-title">Pentatonic VI</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-vi.121/"> <img class="tab-images" src="design/syn/pentatonics6-1.png"> <img class="tab-images" src="design/syn/pentatonics6-2.png"> </a> <h1 class="syn-title">Pentatonic VII</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-vii.122/"> <img class="tab-images" src="design/syn/pentatonics7-1.png"> <img class="tab-images" src="design/syn/pentatonics7-2.png"> </a> <h1 class="syn-title">Pentatonic VIII</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-viii.123/"> <img class="tab-images" src="design/syn/pentatonics8.png"> </a> <h1 class="syn-title">Pentatonic IX</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-ix.124/"> <img class="tab-images" src="design/syn/pentatonics9.png"> </a> <h1 class="syn-title">Pentatonic X</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-x.125/"> <img class="tab-images" src="design/syn/pentatonics10.png"></div><div class="inner-display pentatonics-scales"><img class="tab-images" src="design/scales/pentatonic-scales.jpg"></div></div></div>';
+    document.querySelector("#skill-container").innerHTML = '<div id="pentatonics"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Pentatonic Scales</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button></div> </div> </div<div><div class="skill-options"><button class="skill-option-buttons pentatonics-syn-button">SYN\'s Etude</button><button class="skill-option-buttons pentatonics-scales-button">Scales</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display pentatonics-syn"><h1 class="syn-title">Pentatonic I</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-i.116/"> <img class="tab-images" src="Design/syn/pentatonics1.png"> </a> <h1 class="syn-title">Pentatonic II</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-ii.117/"> <img class="tab-images" src="Design/syn/pentatonics2.png"> </a> <h1 class="syn-title">Pentatonic III</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-iii.118/"> <img class="tab-images" src="Design/syn/pentatonics3.png"> </a> <h1 class="syn-title">Pentatonic IV</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-iv.119/"> <img class="tab-images" src="Design/syn/pentatonics4.png"> </a> <h1 class="syn-title">Pentatonic V</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-v.120/"> <img class="tab-images" src="Design/syn/pentatonics5.png"> </a> <h1 class="syn-title">Pentatonic VI</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-vi.121/"> <img class="tab-images" src="Design/syn/pentatonics6-1.png"> <img class="tab-images" src="Design/syn/pentatonics6-2.png"> </a> <h1 class="syn-title">Pentatonic VII</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-vii.122/"> <img class="tab-images" src="Design/syn/pentatonics7-1.png"> <img class="tab-images" src="Design/syn/pentatonics7-2.png"> </a> <h1 class="syn-title">Pentatonic VIII</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-viii.123/"> <img class="tab-images" src="Design/syn/pentatonics8.png"> </a> <h1 class="syn-title">Pentatonic IX</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-ix.124/"> <img class="tab-images" src="Design/syn/pentatonics9.png"> </a> <h1 class="syn-title">Pentatonic X</h1> <a target="_blank" href="https://syngates.com/lessons/pentatonics-x.125/"> <img class="tab-images" src="Design/syn/pentatonics10.png"></div><div class="inner-display pentatonics-scales"><img class="tab-images" src="Design/scales/pentatonic-scales.jpg"></div></div></div>';
     updateListener();
 
     document.querySelector(".pentatonics-syn-button").addEventListener("click", function() {
@@ -1025,227 +1025,227 @@ function noteRecNextLevel(difficulty) {
         var n = Math.floor(Math.random() * 7 + 1);
         if (n == 1) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c4.png");
         } if (n == 2) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d4.png");
         } if (n == 3) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e4.png");
         } if (n == 4) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f4.png");
         } if (n == 5) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g4.png");
         } if (n == 6) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a4.png");
         } if (n == 7) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b4.png");
         } 
 
     } if (difficulty == "medium") {
         var n = Math.floor(Math.random() * 14 + 1);
         if (n == 1) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c4.png");
         } if (n == 2) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d4.png");
         } if (n == 3) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e4.png");
         } if (n == 4) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f4.png");
         } if (n == 5) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g4.png");
         } if (n == 6) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a4.png");
         } if (n == 7) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b4.png");
         } if (n == 8) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c5.png");
         } if (n == 9) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d5.png");
         } if (n == 10) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e5.png");
         } if (n == 11) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f5.png");
         } if (n == 12) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g5.png");
         } if (n == 13) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a5.png");
         } if (n == 14) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b5.png");
         }
     } if (difficulty == "hard") {
         var n = Math.floor(Math.random() * 51 + 1);
         if (n == 1) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c3.png");
         } if (n == 2) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d3.png");
         } if (n == 3) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e3.png");
         } if (n == 4) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f3.png");
         } if (n == 5) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g3.png");
         } if (n == 6) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a3.png");
         } if (n == 7) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b3.png");
         } if (n == 8) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c4.png");
         } if (n == 9) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d4.png");
         } if (n == 10) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e4.png");
         } if (n == 11) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f4.png");
         } if (n == 12) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g4.png");
         } if (n == 13) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a4.png");
         } if (n == 14) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b4.png");
         } if (n == 15) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c5.png");
         } if (n == 16) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d5.png");
         } if (n == 17) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e5.png");
         } if (n == 18) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f5.png");
         } if (n == 19) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g5.png");
         } if (n == 20) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a5.png");
         } if (n == 21) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b5.png");
         } if (n == 22) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db3.png");
         } if (n == 23) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb3.png");
         } if (n == 24) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb3.png");
         } if (n == 25) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab3.png");
         } if (n == 26) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb3.png");
         } if (n == 27) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db4.png");
         } if (n == 28) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb4.png");
         } if (n == 29) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb4.png");
         } if (n == 30) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab4.png");
         } if (n == 31) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb4.png");
         } if (n == 32) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db5.png");
         } if (n == 33) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb5.png");
         } if (n == 34) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb5.png");
         } if (n == 35) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab5.png");
         } if (n == 36) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb5.png");
         } if (n == 37) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db3.png");
         } if (n == 38) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb3.png");
         } if (n == 39) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb3.png");
         } if (n == 40) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab3.png");
         } if (n == 41) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb3.png");
         } if (n == 42) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db4.png");
         } if (n == 43) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb4.png");
         } if (n == 44) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb4.png");
         } if (n == 45) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab4.png");
         } if (n == 46) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb4.png");
         } if (n == 47) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db5.png");
         } if (n == 48) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb5.png");
         } if (n == 49) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb5.png");
         } if (n == 50) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab5.png");
         } if (n == 51) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb5.png");
         }
     } if (difficulty == "extreme") {
         var n = Math.floor(Math.random() * 70 +1);
@@ -1254,289 +1254,289 @@ document.querySelector(".note-image").setAttribute("src", "design/note-recogniti
         }
         if (n == 1) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c3.png");
         } if (n == 2) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d3.png");
         } if (n == 3) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e3.png");
         } if (n == 4) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f3.png");
         } if (n == 5) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g3.png");
         } if (n == 6) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a3.png");
         } if (n == 7) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b3.png");
         } if (n == 8) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c4.png");
         } if (n == 9) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d4.png");
         } if (n == 10) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e4.png");
         } if (n == 11) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f4.png");
         } if (n == 12) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g4.png");
         } if (n == 13) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a4.png");
         } if (n == 14) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b4.png");
         } if (n == 15) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c5.png");
         } if (n == 16) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d5.png");
         } if (n == 17) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e5.png");
         } if (n == 18) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f5.png");
         } if (n == 19) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g5.png");
         } if (n == 20) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a5.png");
         } if (n == 21) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b5.png");
         } if (n == 22) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db3.png");
         } if (n == 23) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb3.png");
         } if (n == 24) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb3.png");
         } if (n == 25) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab3.png");
         } if (n == 26) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb3.png");
         } if (n == 27) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db4.png");
         } if (n == 28) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb4.png");
         } if (n == 29) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb4.png");
         } if (n == 30) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab4.png");
         } if (n == 31) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb4.png");
         } if (n == 32) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db5.png");
         } if (n == 33) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb5.png");
         } if (n == 34) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb5.png");
         } if (n == 35) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab5.png");
         } if (n == 36) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb5.png");
         } if (n == 37) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db3.png");
         } if (n == 38) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb3.png");
         } if (n == 39) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb3.png");
         } if (n == 40) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab3.png");
         } if (n == 41) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb3.png");
         } if (n == 42) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db4.png");
         } if (n == 43) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb4.png");
         } if (n == 44) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb4.png");
         } if (n == 45) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab4.png");
         } if (n == 46) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb4.png");
         } if (n == 47) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db5.png");
         } if (n == 48) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb5.png");
         } if (n == 49) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb5.png");
         } if (n == 50) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab5.png");
         } if (n == 51) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb5.png");
         } if (n == 52) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-c2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-c2.png");
         } if (n == 53) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-d2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-d2.png");
         } if (n == 54) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-e2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-e2.png");
         } if (n == 55) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-f2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-f2.png");
         } if (n == 56) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-g2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-g2.png");
         } if (n == 57) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-a2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-a2.png");
         } if (n == 58) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-b2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-b2.png");
         } if (n == 59) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-c3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-c3.png");
         } if (n == 60) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-d3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-d3.png");
         } if (n == 61) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-e3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-e3.png");
         } if (n == 62) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-f3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-f3.png");
         } if (n == 63) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-g3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-g3.png");
         } if (n == 64) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-a3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-a3.png");
         } if (n == 65) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-b3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-b3.png");
         } if (n == 66) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db2.png");
         } if (n == 67) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb2.png");
         } if (n == 68) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb2.png");
         } if (n == 69) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab2.png");
         } if (n == 70) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb2.png");
         } if (n == 71) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db3.png");
         } if (n == 72) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb3.png");
         } if (n == 73) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb3.png");
         } if (n == 74) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab3.png");
         } if (n == 75) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb3.png");
         } if (n == 76) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db4.png");
         } if (n == 77) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb4.png");
         } if (n == 78) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb4.png");
         } if (n == 79) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab4.png");
         } if (n == 80) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb4.png");
         } if (n == 81) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db2.png");
         } if (n == 82) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb2.png");
         } if (n == 83) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb2.png");
         } if (n == 84) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab2.png");
         } if (n == 85) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb2.png");
         } if (n == 86) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db3.png");
         } if (n == 87) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb3.png");
         } if (n == 88) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb3.png");
         } if (n == 89) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab3.png");
         } if (n == 90) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb3.png");
         } if (n == 91) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db4.png");
         } if (n == 92) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb4.png");
         } if (n == 93) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb4.png");
         } if (n == 94) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab4.png");
         } if (n == 95) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb4.png");
         
         }
    
@@ -1547,418 +1547,418 @@ document.querySelector(".note-image").setAttribute("src", "design/note-recogniti
         }
         if (n == 1) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c3.png");
         } if (n == 2) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d3.png");
         } if (n == 3) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e3.png");
         } if (n == 4) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f3.png");
         } if (n == 5) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g3.png");
         } if (n == 6) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a3.png");
         } if (n == 7) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b3.png");
         } if (n == 8) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c4.png");
         } if (n == 9) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d4.png");
         } if (n == 10) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e4.png");
         } if (n == 11) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f4.png");
         } if (n == 12) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g4.png");
         } if (n == 13) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a4.png");
         } if (n == 14) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b4.png");
         } if (n == 15) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c5.png");
         } if (n == 16) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d5.png");
         } if (n == 17) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e5.png");
         } if (n == 18) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f5.png");
         } if (n == 19) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g5.png");
         } if (n == 20) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a5.png");
         } if (n == 21) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b5.png");
         } if (n == 22) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c6.png");
         } if (n == 23) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/d6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/d6.png");
         } if (n == 24) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/e6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/e6.png");
         } if (n == 25) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/f6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/f6.png");
         } if (n == 26) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/g6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/g6.png");
         } if (n == 134) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/a6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/a6.png");
         } if (n == 135) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/b6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/b6.png");
         } if (n == 136) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/c7.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/c7.png");
         } if (n == 137) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db3.png");
         } if (n == 138) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb3.png");
         } if (n == 27) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb3.png");
         } if (n == 28) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab3.png");
         } if (n == 29) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb3.png");
         } if (n == 30) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db4.png");
         } if (n == 31) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb4.png");
         } if (n == 32) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb4.png");
         } if (n == 33) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab4.png");
         } if (n == 34) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb4.png");
         } if (n == 35) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db5.png");
         } if (n == 36) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb5.png");
         } if (n == 37) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb5.png");
         } if (n == 38) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab5.png");
         } if (n == 39) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb5.png");
         } if (n == 40) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db6.png");
         } if (n == 41) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb6.png");
         } if (n == 42) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb6.png");
         } if (n == 43) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab6.png");
         } if (n == 44) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb6.png");
         } if (n == 45) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db3.png");
         } if (n == 46) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb3.png");
         } if (n == 47) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb3.png");
         } if (n == 48) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab3.png");
         } if (n == 49) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb3.png");
         } if (n == 50) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db4.png");
         } if (n == 51) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb4.png");
         } if (n == 52) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb4.png");
         } if (n == 53) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab4.png");
         } if (n == 54) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb4.png");
         } if (n == 55) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db5.png");
         } if (n == 56) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb5.png");
         } if (n == 57) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb5.png");
         } if (n == 58) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab5.png");
         } if (n == 59) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb5.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb5.png");
         } if (n == 60) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db6.png");
         } if (n == 61) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/eb6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/eb6.png");
         } if (n == 62) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/gb6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/gb6.png");
         } if (n == 63) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/ab6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/ab6.png");
         } if (n == 64) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/bb6.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/bb6.png");
         } if (n == 65) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/db7.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/db7.png");
         } if (n == 66) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-c1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-c1.png");
         } if (n == 67) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-d1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-d1.png");
         } if (n == 68) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-e1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-e1.png");
         } if (n == 69) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-f1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-f1.png");
         } if (n == 70) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-g1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-g1.png");
         } if (n == 71) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-a1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-a1.png");
         } if (n == 72) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-b1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-b1.png");
         } if (n == 73) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-c2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-c2.png");
         } if (n == 74) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-d2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-d2.png");
         } if (n == 75) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-e2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-e2.png");
         } if (n == 76) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-f2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-f2.png");
         } if (n == 77) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-g2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-g2.png");
         } if (n == 78) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-a2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-a2.png");
         } if (n == 79) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-b2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-b2.png");
         } if (n == 80) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-c3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-c3.png");
         } if (n == 81) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-d3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-d3.png");
         } if (n == 82) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-e3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-e3.png");
         } if (n == 83) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-f3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-f3.png");
         } if (n == 84) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-g3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-g3.png");
         } if (n == 85) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-a3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-a3.png");
         } if (n == 86) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-b3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-b3.png");
         } if (n == 87) {
             currentNote = "c";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-c4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-c4.png");
         } if (n == 88) {
             currentNote = "d";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-d4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-d4.png");
         } if (n == 89) {
             currentNote = "e";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-e4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-e4.png");
         } if (n == 90) {
             currentNote = "f";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-f4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-f4.png");
         } if (n == 91) {
             currentNote = "g";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-g4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-g4.png");
         } if (n == 92) {
             currentNote = "a";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-a4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-a4.png");
         } if (n == 93) {
             currentNote = "b";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-b4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-b4.png");
         } if (n == 94) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db1.png");
         } if (n == 95) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb1.png");
         } if (n == 96) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb1.png");
         } if (n == 97) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab1.png");
         } if (n == 98) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb1.png");
         } if (n == 99) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db2.png");
         } if (n == 100) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb2.png");
         } if (n == 101) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb2.png");
         } if (n == 102) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab2.png");
         } if (n == 103) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb2.png");
         } if (n == 104) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db3.png");
         } if (n == 105) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb3.png");
         } if (n == 106) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb3.png");
         } if (n == 107) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab3.png");
         } if (n == 108) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb3.png");
         } if (n == 109) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db4.png");
         } if (n == 110) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb4.png");
         } if (n == 111) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb4.png");
         } if (n == 112) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab4.png");
         } if (n == 113) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb4.png");
         } if (n == 114) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db1.png");
         } if (n == 115) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb1.png");
         } if (n == 116) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb1.png");
         } if (n == 117) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab1.png");
         } if (n == 118) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb1.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb1.png");
         } if (n == 119) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db2.png");
         } if (n == 120) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb2.png");
         } if (n == 121) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb2.png");
         } if (n == 122) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab2.png");
         } if (n == 123) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb2.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb2.png");
         } if (n == 124) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db3.png");
         } if (n == 125) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb3.png");
         } if (n == 126) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb3.png");
         } if (n == 127) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab3.png");
         } if (n == 128) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb3.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb3.png");
         } if (n == 129) {
             currentNote = "db";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-db4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-db4.png");
         } if (n == 130) {
             currentNote = "eb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-eb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-eb4.png");
         } if (n == 131) {
             currentNote = "gb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-gb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-gb4.png");
         } if (n == 132) {
             currentNote = "ab";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-ab4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-ab4.png");
         } if (n == 133) {
             currentNote = "bb";
-document.querySelector(".note-image").setAttribute("src", "design/note-recognition/fkey-bb4.png");
+document.querySelector(".note-image").setAttribute("src", "Design/note-recognition/fkey-bb4.png");
         
         }
     }
@@ -2944,7 +2944,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "184");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/second-heartbeat1.png"> <img class="tab-images" src="design/solos/images/second-heartbeat2.png"> <img class="tab-images" src="design/solos/images/second-heartbeat3.png"> <img class="tab-images" src="design/solos/images/second-heartbeat4.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/second-heartbeat1.png"> <img class="tab-images" src="Design/solos/images/second-heartbeat2.png"> <img class="tab-images" src="Design/solos/images/second-heartbeat3.png"> <img class="tab-images" src="Design/solos/images/second-heartbeat4.png">';
         soloBpm = 184;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2956,7 +2956,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "97");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "97");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "97");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/paradigm1.png"> <img class="tab-images" src="design/solos/images/paradigm2.png"> <img class="tab-images" src="design/solos/images/paradigm3.png"> <img class="tab-images" src="design/solos/images/paradigm4.png"> <img class="tab-images" src="design/solos/images/paradigm5.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/paradigm1.png"> <img class="tab-images" src="Design/solos/images/paradigm2.png"> <img class="tab-images" src="Design/solos/images/paradigm3.png"> <img class="tab-images" src="Design/solos/images/paradigm4.png"> <img class="tab-images" src="Design/solos/images/paradigm5.png">';
         soloBpm = 97;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2968,7 +2968,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "136");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "136");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "136");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/heretic1.png"> <img class="tab-images" src="design/solos/images/heretic2.png"> <img class="tab-images" src="design/solos/images/heretic3.png"> <img class="tab-images" src="design/solos/images/heretic4.png"> <img class="tab-images" src="design/solos/images/heretic5.png"> <img class="tab-images" src="design/solos/images/heretic6.png"> <img class="tab-images" src="design/solos/images/heretic7.png"> <img class="tab-images" src="design/solos/images/heretic8.png"> <img class="tab-images" src="design/solos/images/heretic9.png"> <img class="tab-images" src="design/solos/images/heretic10.png"> <img class="tab-images" src="design/solos/images/heretic11.png"> <img class="tab-images" src="design/solos/images/heretic12.png"> <img class="tab-images" src="design/solos/images/heretic13.png"> <img class="tab-images" src="design/solos/images/heretic14.png"> <img class="tab-images" src="design/solos/images/heretic15.png"> <img class="tab-images" src="design/solos/images/heretic16.png"> <img class="tab-images" src="design/solos/images/heretic17.png"> <img class="tab-images" src="design/solos/images/heretic18.png"> <img class="tab-images" src="design/solos/images/heretic19.png"> <img class="tab-images" src="design/solos/images/heretic20.png"> </div>';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/heretic1.png"> <img class="tab-images" src="Design/solos/images/heretic2.png"> <img class="tab-images" src="Design/solos/images/heretic3.png"> <img class="tab-images" src="Design/solos/images/heretic4.png"> <img class="tab-images" src="Design/solos/images/heretic5.png"> <img class="tab-images" src="Design/solos/images/heretic6.png"> <img class="tab-images" src="Design/solos/images/heretic7.png"> <img class="tab-images" src="Design/solos/images/heretic8.png"> <img class="tab-images" src="Design/solos/images/heretic9.png"> <img class="tab-images" src="Design/solos/images/heretic10.png"> <img class="tab-images" src="Design/solos/images/heretic11.png"> <img class="tab-images" src="Design/solos/images/heretic12.png"> <img class="tab-images" src="Design/solos/images/heretic13.png"> <img class="tab-images" src="Design/solos/images/heretic14.png"> <img class="tab-images" src="Design/solos/images/heretic15.png"> <img class="tab-images" src="Design/solos/images/heretic16.png"> <img class="tab-images" src="Design/solos/images/heretic17.png"> <img class="tab-images" src="Design/solos/images/heretic18.png"> <img class="tab-images" src="Design/solos/images/heretic19.png"> <img class="tab-images" src="Design/solos/images/heretic20.png"> </div>';
         soloBpm = 136;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2980,7 +2980,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "134");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/the-stage1.png"> <img class="tab-images" src="design/solos/images/the-stage2.png"> <img class="tab-images" src="design/solos/images/the-stage3.png"> <img class="tab-images" src="design/solos/images/the-stage4.png"> <img class="tab-images" src="design/solos/images/the-stage5.png"> <img class="tab-images" src="design/solos/images/the-stage6.png"> <img class="tab-images" src="design/solos/images/the-stage7.png"> <img class="tab-images" src="design/solos/images/the-stage8.png"> <img class="tab-images" src="design/solos/images/the-stage9.png"> <img class="tab-images" src="design/solos/images/the-stage10.png"> <img class="tab-images" src="design/solos/images/the-stage11.png"> <img class="tab-images" src="design/solos/images/the-stage12.png"> <img class="tab-images" src="design/solos/images/the-stage13.png"> <img class="tab-images" src="design/solos/images/the-stage14.png"> <img class="tab-images" src="design/solos/images/the-stage15.png"> </div>';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/the-stage1.png"> <img class="tab-images" src="Design/solos/images/the-stage2.png"> <img class="tab-images" src="Design/solos/images/the-stage3.png"> <img class="tab-images" src="Design/solos/images/the-stage4.png"> <img class="tab-images" src="Design/solos/images/the-stage5.png"> <img class="tab-images" src="Design/solos/images/the-stage6.png"> <img class="tab-images" src="Design/solos/images/the-stage7.png"> <img class="tab-images" src="Design/solos/images/the-stage8.png"> <img class="tab-images" src="Design/solos/images/the-stage9.png"> <img class="tab-images" src="Design/solos/images/the-stage10.png"> <img class="tab-images" src="Design/solos/images/the-stage11.png"> <img class="tab-images" src="Design/solos/images/the-stage12.png"> <img class="tab-images" src="Design/solos/images/the-stage13.png"> <img class="tab-images" src="Design/solos/images/the-stage14.png"> <img class="tab-images" src="Design/solos/images/the-stage15.png"> </div>';
         soloBpm = 134;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -2992,7 +2992,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "134");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "134");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/crimson-day1.png"> <img class="tab-images" src="design/solos/images/crimson-day2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/crimson-day1.png"> <img class="tab-images" src="Design/solos/images/crimson-day2.png">';
         soloBpm = 134;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3004,7 +3004,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "178");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "178");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "178");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/coming-home1.png"> <img class="tab-images" src="design/solos/images/coming-home2.png"> <img class="tab-images" src="design/solos/images/coming-home3.png"> <img class="tab-images" src="design/solos/images/coming-home4.png"> <img class="tab-images" src="design/solos/images/coming-home5.png"> <img class="tab-images" src="design/solos/images/coming-home6.png"> <img class="tab-images" src="design/solos/images/coming-home7.png"> <img class="tab-images" src="design/solos/images/coming-home8.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/coming-home1.png"> <img class="tab-images" src="Design/solos/images/coming-home2.png"> <img class="tab-images" src="Design/solos/images/coming-home3.png"> <img class="tab-images" src="Design/solos/images/coming-home4.png"> <img class="tab-images" src="Design/solos/images/coming-home5.png"> <img class="tab-images" src="Design/solos/images/coming-home6.png"> <img class="tab-images" src="Design/solos/images/coming-home7.png"> <img class="tab-images" src="Design/solos/images/coming-home8.png">';
         soloBpm = 178;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3016,7 +3016,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "129");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/nightmare1.png"> <img class="tab-images" src="design/solos/images/nightmare2.png"> <img class="tab-images" src="design/solos/images/nightmare3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/nightmare1.png"> <img class="tab-images" src="Design/solos/images/nightmare2.png"> <img class="tab-images" src="Design/solos/images/nightmare3.png">';
         soloBpm = 129;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3028,7 +3028,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "138");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "138");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "138");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/buried-alive1.png"> <img class="tab-images" src="design/solos/images/buried-alive2.png"> <img class="tab-images" src="design/solos/images/buried-alive3.png"> <img class="tab-images" src="design/solos/images/buried-alive4.png"> <img class="tab-images" src="design/solos/images/buried-alive5.png"> <img class="tab-images" src="design/solos/images/buried-alive6.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/buried-alive1.png"> <img class="tab-images" src="Design/solos/images/buried-alive2.png"> <img class="tab-images" src="Design/solos/images/buried-alive3.png"> <img class="tab-images" src="Design/solos/images/buried-alive4.png"> <img class="tab-images" src="Design/solos/images/buried-alive5.png"> <img class="tab-images" src="Design/solos/images/buried-alive6.png">';
         soloBpm = 138;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3040,7 +3040,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "184");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/natural-born-killer1.png"> <img class="tab-images" src="design/solos/images/natural-born-killer2.png"> <img class="tab-images" src="design/solos/images/natural-born-killer3.png"> <img class="tab-images" src="design/solos/images/natural-born-killer4.png"> <img class="tab-images" src="design/solos/images/natural-born-killer5.png"> <img class="tab-images" src="design/solos/images/natural-born-killer6.png"> <img class="tab-images" src="design/solos/images/natural-born-killer7.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/natural-born-killer1.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer2.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer3.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer4.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer5.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer6.png"> <img class="tab-images" src="Design/solos/images/natural-born-killer7.png">';
         soloBpm = 184;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3053,7 +3053,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "130");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/victim1.png"> <img class="tab-images" src="design/solos/images/victim2.png"> <img class="tab-images" src="design/solos/images/victim3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/victim1.png"> <img class="tab-images" src="Design/solos/images/victim2.png"> <img class="tab-images" src="Design/solos/images/victim3.png">';
         soloBpm = 130;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3067,7 +3067,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "69");
         document.querySelector(".solo-bpm-scrubber").setAttribute("min", "30");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "69");
-        document.querySelector(".guitar-1").innerHTML = '<video width="100%" height="100%" controls> <source src="design/solos/images/dear-god.mp4"> </video>';
+        document.querySelector(".guitar-1").innerHTML = '<video width="100%" height="100%" controls> <source src="Design/solos/images/dear-god.mp4"> </video>';
         soloBpm = 69;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3079,7 +3079,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "140");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/seize-the-day1.png"> <img class="tab-images" src="design/solos/images/seize-the-day2.png"> <img class="tab-images" src="design/solos/images/seize-the-day3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/seize-the-day1.png"> <img class="tab-images" src="Design/solos/images/seize-the-day2.png"> <img class="tab-images" src="Design/solos/images/seize-the-day3.png">';
         soloBpm = 140;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3091,7 +3091,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "123");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "123");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "123");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/sidewinder1.png"> <img class="tab-images" src="design/solos/images/sidewinder2.png"> <img class="tab-images" src="design/solos/images/sidewinder3.png"> <img class="tab-images" src="design/solos/images/sidewinder4.png"> <img class="tab-images" src="design/solos/images/sidewinder5.png"> <img class="tab-images" src="design/solos/images/sidewinder6.png"> <img class="tab-images" src="design/solos/images/sidewinder7.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/sidewinder1.png"> <img class="tab-images" src="Design/solos/images/sidewinder2.png"> <img class="tab-images" src="Design/solos/images/sidewinder3.png"> <img class="tab-images" src="Design/solos/images/sidewinder4.png"> <img class="tab-images" src="Design/solos/images/sidewinder5.png"> <img class="tab-images" src="Design/solos/images/sidewinder6.png"> <img class="tab-images" src="Design/solos/images/sidewinder7.png">';
         soloBpm = 123;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3103,7 +3103,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "130");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "130");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/betrayed1.png"> <img class="tab-images" src="design/solos/images/betrayed2.png"> <img class="tab-images" src="design/solos/images/betrayed3.png"> <img class="tab-images" src="design/solos/images/betrayed4.png"> <img class="tab-images" src="design/solos/images/betrayed5.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/betrayed1.png"> <img class="tab-images" src="Design/solos/images/betrayed2.png"> <img class="tab-images" src="Design/solos/images/betrayed3.png"> <img class="tab-images" src="Design/solos/images/betrayed4.png"> <img class="tab-images" src="Design/solos/images/betrayed5.png">';
         soloBpm = 130;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3115,7 +3115,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "164");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "164");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "164");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/mia1.png"> <img class="tab-images" src="design/solos/images/mia2.png"> <img class="tab-images" src="design/solos/images/mia3.png"> <img class="tab-images" src="design/solos/images/mia4.png"> <img class="tab-images" src="design/solos/images/mia5.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/mia1.png"> <img class="tab-images" src="Design/solos/images/mia2.png"> <img class="tab-images" src="Design/solos/images/mia3.png"> <img class="tab-images" src="Design/solos/images/mia4.png"> <img class="tab-images" src="Design/solos/images/mia5.png">';
         soloBpm = 164;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3127,7 +3127,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "175");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "175");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "175");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/not-invincible1.png"> <img class="tab-images" src="design/solos/images/not-invincible2.png"> <img class="tab-images" src="design/solos/images/not-invincible3.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/not-invincible1.png"> <img class="tab-images" src="Design/solos/images/not-invincible2.png"> <img class="tab-images" src="Design/solos/images/not-invincible3.png">';
         soloBpm = 175;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3139,7 +3139,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "133");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "133");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "133");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/a-place-where-you-belong1.png"> <img class="tab-images" src="design/solos/images/a-place-where-you-belong2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/a-place-where-you-belong1.png"> <img class="tab-images" src="Design/solos/images/a-place-where-you-belong2.png">';
         soloBpm = 133;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3151,7 +3151,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "184");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "184");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/the-last-fight1.png"> <img class="tab-images" src="design/solos/images/the-last-fight2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/the-last-fight1.png"> <img class="tab-images" src="Design/solos/images/the-last-fight2.png">';
         soloBpm = 184;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3163,7 +3163,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "127");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "127");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "127");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/waking-the-demon1.png"> <img class="tab-images" src="design/solos/images/waking-the-demon2.png"> <img class="tab-images" src="design/solos/images/waking-the-demon3.png"> <img class="tab-images" src="design/solos/images/waking-the-demon4.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/waking-the-demon1.png"> <img class="tab-images" src="Design/solos/images/waking-the-demon2.png"> <img class="tab-images" src="Design/solos/images/waking-the-demon3.png"> <img class="tab-images" src="Design/solos/images/waking-the-demon4.png">';
         soloBpm = 127;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3175,7 +3175,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "116");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "116");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "116");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/say-goodnight1.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/say-goodnight1.png">';
         soloBpm = 116;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3187,7 +3187,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "93");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "93");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "93");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/the-poison1.png"> <img class="tab-images" src="design/solos/images/the-poison2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/the-poison1.png"> <img class="tab-images" src="Design/solos/images/the-poison2.png">';
         soloBpm = 93;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3199,7 +3199,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "129");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "129");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/blackened1.png"> <img class="tab-images" src="design/solos/images/blackened2.png"> <img class="tab-images" src="design/solos/images/blackened3.png"> <img class="tab-images" src="design/solos/images/blackened4.png"> <img class="tab-images" src="design/solos/images/blackened5.png"> <img class="tab-images" src="design/solos/images/blackened6.png"> <img class="tab-images" src="design/solos/images/blackened7.png"> <img class="tab-images" src="design/solos/images/blackened8.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/blackened1.png"> <img class="tab-images" src="Design/solos/images/blackened2.png"> <img class="tab-images" src="Design/solos/images/blackened3.png"> <img class="tab-images" src="Design/solos/images/blackened4.png"> <img class="tab-images" src="Design/solos/images/blackened5.png"> <img class="tab-images" src="Design/solos/images/blackened6.png"> <img class="tab-images" src="Design/solos/images/blackened7.png"> <img class="tab-images" src="Design/solos/images/blackened8.png">';
         soloBpm = 129;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3213,7 +3213,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "92");
         document.querySelector(".solo-bpm-scrubber").setAttribute("min", "30");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "92");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/solos/images/nothin-else-matters.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/solos/images/nothin-else-matters.png">';
         soloBpm = 92;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3235,7 +3235,7 @@ function changeFS(fs) {
         document.querySelector(".solo-bpm").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "140");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "140");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/fingerstyle/images/buried-alive1.png"> <img class="tab-images" src="design/fingerstyle/images/buried-alive2.png"> <img class="tab-images" src="design/fingerstyle/images/buried-alive3.png"> ';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/fingerstyle/images/buried-alive1.png"> <img class="tab-images" src="Design/fingerstyle/images/buried-alive2.png"> <img class="tab-images" src="Design/fingerstyle/images/buried-alive3.png"> ';
         soloBpm = 140;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3260,7 +3260,7 @@ function changeFS(fs) {
         document.querySelector(".solo-bpm").setAttribute("max", "74");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "74");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "74");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/fingerstyle/images/so-far-away1.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/fingerstyle/images/so-far-away1.png">';
         soloBpm = 74;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3272,7 +3272,7 @@ function changeFS(fs) {
         document.querySelector(".solo-bpm").setAttribute("max", "69");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "69");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "69");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/fingerstyle/images/nothing-else-matters1.png"><img class="tab-images" src="design/fingerstyle/images/nothing-else-matters2.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/fingerstyle/images/nothing-else-matters1.png"><img class="tab-images" src="Design/fingerstyle/images/nothing-else-matters2.png">';
         soloBpm = 69;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
@@ -3284,7 +3284,7 @@ function changeFS(fs) {
         document.querySelector(".solo-bpm").setAttribute("max", "72");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "72");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "72");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/fingerstyle/images/stairway-to-heaven1.png"> <img class="tab-images" src="design/fingerstyle/images/stairway-to-heaven2.png"> <img class="tab-images" src="design/fingerstyle/images/stairway-to-heaven3.png"> <img class="tab-images" src="design/fingerstyle/images/stairway-to-heaven4.png"> <img class="tab-images" src="design/fingerstyle/images/stairway-to-heaven5.png"> <img class="tab-images" src="design/fingerstyle/images/stairway-to-heaven6.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/fingerstyle/images/stairway-to-heaven1.png"> <img class="tab-images" src="Design/fingerstyle/images/stairway-to-heaven2.png"> <img class="tab-images" src="Design/fingerstyle/images/stairway-to-heaven3.png"> <img class="tab-images" src="Design/fingerstyle/images/stairway-to-heaven4.png"> <img class="tab-images" src="Design/fingerstyle/images/stairway-to-heaven5.png"> <img class="tab-images" src="Design/fingerstyle/images/stairway-to-heaven6.png">';
         soloBpm = 72;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
