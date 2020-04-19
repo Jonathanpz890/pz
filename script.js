@@ -107,7 +107,7 @@ var note = {
     gb4: new Audio("Design/Pitch-recognition/Audio/gb4.m4a"),
     gb5: new Audio("Design/Pitch-recognition/Audio/gb5.m4a"),
     gb6: new Audio("Design/Pitch-recognition/Audio/gb6.m4a")
-}
+};
 
 document.addEventListener("keydown", function(e) {
     if (e.key == "Escape" && document.querySelector("#open-screen").style.display === "none") {
@@ -759,7 +759,7 @@ function backingTracks() {
 function pitchRec() {
     //insert the html 
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="pitch-rec"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Pitch Recognition</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"> <h1><u>Difficulties</u></h1> <button onclick="changeDifficulty(\'easy\', \'pitch\')" class="skill-option-buttons difficulty-easy-button">Easy <span class="tooltip-text">1 octave, without #♭, notes visible, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'medium\', \'pitch\')" class="skill-option-buttons difficulty-medium-button">Medium <span class="tooltip-text">1 octave, with #♭, notes visible, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'hard\', \'pitch\')" class="skill-option-buttons difficulty-hard-button">Hard <span class="tooltip-text">3 octavs, without #♭, notes visible, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'extreme\', \'pitch\')" class="skill-option-buttons difficulty-extreme-button">Extreme <span class="tooltip-text">3 octaves, with #♭, notes hidden, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'insane\', \'pitch\')" class="skill-option-buttons difficulty-insane-button">Insane <span class="tooltip-text">All octaves, with #♭, notes hidden, point only for correct first answers.</span> </button> </div> <div class="skill-display"><div class="inner-display pitch-rec" style="display: block"> <p>Points: 0</p> <h2 class="rec-level">Pitch Recognition</h2> <button class="pitch-rec-start" onclick="pitchRecStart()">Start</button> <div class="piano"> <div class="c white-key key"><h1 class="key-text">C</h1></div><!-- --><div class="d white-key key"><h1 class="key-text">D</h1></div><!-- ---><div class="e white-key key"><h1 class="key-text">E</h1></div><!-- ---><div class="f white-key key"><h1 class="key-text">F</h1></div><!-- ---><div class="g white-key key"><h1 class="key-text">G</h1></div><!-- ---><div class="a white-key key"><h1 class="key-text">A</h1></div><!-- ---><div class="b white-key key"><h1 class="key-text">B</h1></div> <div class="db black-key key"><h2 class="key-text">C#</h2><br><h2 class="key-text">D♭</h2></div> <div class="eb black-key key"><h2 class="key-text">D#</h2><br><h2 class="key-text">E♭</h2></div> <div class="gb black-key key"><h2 class="key-text">F#</h2><br><h2 class="key-text">G♭</h2></div> <div class="ab black-key key"><h2 class="key-text">G#</h2><br><h2 class="key-text">A♭</h2></div> <div class="bb black-key key"><h2 class="key-text">A#</h2><br><h2 class="key-text">B♭</h2></div> </div> </div> </div> </div>';
+    document.querySelector("#skill-container").innerHTML = '<div id="pitch-rec"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Pitch Recognition</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"> <h1><u>Difficulties</u></h1> <button onclick="changeDifficulty(\'easy\', \'pitch\')" class="skill-option-buttons difficulty-easy-button">Easy <span class="tooltip-text">1 octave, without #♭, notes visible, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'medium\', \'pitch\')" class="skill-option-buttons difficulty-medium-button">Medium <span class="tooltip-text">1 octave, with #♭, notes visible, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'hard\', \'pitch\')" class="skill-option-buttons difficulty-hard-button">Hard <span class="tooltip-text">3 octavs, without #♭, notes visible, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'extreme\', \'pitch\')" class="skill-option-buttons difficulty-extreme-button">Extreme <span class="tooltip-text">3 octaves, with #♭, notes hidden, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'insane\', \'pitch\')" class="skill-option-buttons difficulty-insane-button">Insane <span class="tooltip-text">All octaves, with #♭, notes hidden, point only for correct first answers.</span> </button> </div> <div class="skill-display"><div class="inner-display pitch-rec" style="display: block"> <p>Points: 0</p> <h2 class="rec-title">Pitch Recognition</h2> <button class="pitch-rec-start" onclick="pitchRecStart()">Start</button> <div class="piano"> <div class="c white-key key"><h1 class="key-text">C</h1></div><!-- --><div class="d white-key key"><h1 class="key-text">D</h1></div><!-- ---><div class="e white-key key"><h1 class="key-text">E</h1></div><!-- ---><div class="f white-key key"><h1 class="key-text">F</h1></div><!-- ---><div class="g white-key key"><h1 class="key-text">G</h1></div><!-- ---><div class="a white-key key"><h1 class="key-text">A</h1></div><!-- ---><div class="b white-key key"><h1 class="key-text">B</h1></div> <div class="db black-key key"><h2 class="key-text">C#</h2><br><h2 class="key-text">D♭</h2></div> <div class="eb black-key key"><h2 class="key-text">D#</h2><br><h2 class="key-text">E♭</h2></div> <div class="gb black-key key"><h2 class="key-text">F#</h2><br><h2 class="key-text">G♭</h2></div> <div class="ab black-key key"><h2 class="key-text">G#</h2><br><h2 class="key-text">A♭</h2></div> <div class="bb black-key key"><h2 class="key-text">A#</h2><br><h2 class="key-text">B♭</h2></div> </div> </div> </div> </div>';
     updateListener();
     //difficulty selection
     noteName = {
@@ -778,7 +778,7 @@ function pitchRec() {
     }
     changeDifficulty("easy", "pitch");
     loopAudio();
-    document.querySelector(".rec-level").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
+    document.querySelector(".rec-title").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
     //play the notes on the piano when pressing and checks answer
     for (i = 0; i < 12; i++) {
         document.querySelectorAll(".key")[i].addEventListener("click", function() {
@@ -875,7 +875,7 @@ function pitchRec() {
 function noteRec() {
     //insert html 
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="note-rec"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Note Recognition</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"> <h1><u>Difficulties</u></h1> <button onclick="changeDifficulty(\'easy\', \'note\')" class="skill-option-buttons difficulty-easy-button">Easy <span class="tooltip-text">1 octave, free time, without #♭, notes visible, single staff, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'medium\', \'note\')" class="skill-option-buttons difficulty-medium-button">Medium <span class="tooltip-text">2 octaves, 5 minutes, without #♭, notes visible, single staff, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'hard\', \'note\')" class="skill-option-buttons difficulty-hard-button">Hard <span class="tooltip-text">3 octavs, 3 minutes, with #♭, notes hidden, single staff, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'extreme\', \'note\')" class="skill-option-buttons difficulty-extreme-button">Extreme <span class="tooltip-text">3 octaves, 2 minutes, with #♭, notes hidden, double staff, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'insane\', \'note\')" class="skill-option-buttons difficulty-insane-button">Insane <span class="tooltip-text">All octaves, 1 minute, with #♭, notes hidden, double staff, point only for correct first answers.</span> </button> </div> <div class="skill-display" style="background-color: rgb(250, 250, 250)"> <div class="inner-display note-rec" style="display: block"> <p>Points: 0</p> <h2 class="rec-level">Note Recognition</h2> <button class="note-rec-start" onclick="noteRecStart()">Start</button> <img class="note-image" src=""> <div class="note-rec-piano"> <div class="c white-key key"> <h1 class="key-text">C</h1> </div><!-- --><div class="d white-key key"> <h1 class="key-text">D</h1> </div><!-- --><div class="e white-key key"> <h1 class="key-text">E</h1> </div><!-- --><div class="f white-key key"> <h1 class="key-text">F</h1> </div><!-- --><div class="g white-key key"> <h1 class="key-text">G</h1> </div><!-- --><div class="a white-key key"> <h1 class="key-text">A</h1> </div><!-- --><div class="b white-key key"> <h1 class="key-text">B</h1> </div> <div class="db black-key key"> <h2 class="key-text">C#</h2><br> <h2 class="key-text">D♭</h2> </div> <div class="eb black-key key"> <h2 class="key-text">D#</h2><br> <h2 class="key-text">E♭</h2> </div> <div class="gb black-key key"> <h2 class="key-text">F#</h2><br> <h2 class="key-text">G♭</h2> </div> <div class="ab black-key key"> <h2 class="key-text">G#</h2><br> <h2 class="key-text">A♭</h2> </div> <div class="bb black-key key"> <h2 class="key-text">A#</h2><br> <h2 class="key-text">B♭</h2> </div> </div> </div> </div> </div>';
+    document.querySelector("#skill-container").innerHTML = '<div id="note-rec"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Note Recognition</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"> <h1><u>Difficulties</u></h1> <button onclick="changeDifficulty(\'easy\', \'note\')" class="skill-option-buttons difficulty-easy-button">Easy <span class="tooltip-text">1 octave, free time, without #♭, notes visible, single staff, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'medium\', \'note\')" class="skill-option-buttons difficulty-medium-button">Medium <span class="tooltip-text">2 octaves, 5 minutes, without #♭, notes visible, single staff, point for every correct answer.</span> </button> <button onclick="changeDifficulty(\'hard\', \'note\')" class="skill-option-buttons difficulty-hard-button">Hard <span class="tooltip-text">3 octavs, 3 minutes, with #♭, notes hidden, single staff, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'extreme\', \'note\')" class="skill-option-buttons difficulty-extreme-button">Extreme <span class="tooltip-text">3 octaves, 2 minutes, with #♭, notes hidden, double staff, points only for correct first answers.</span> </button> <button onclick="changeDifficulty(\'insane\', \'note\')" class="skill-option-buttons difficulty-insane-button">Insane <span class="tooltip-text">All octaves, 1 minute, with #♭, notes hidden, double staff, point only for correct first answers.</span> </button> </div> <div class="skill-display" style="background-color: rgb(250, 250, 250)"> <div class="inner-display note-rec" style="display: block"> <p>Points: 0</p> <h2 class="rec-title">Note Recognition</h2> <button class="note-rec-start" onclick="noteRecStart()">Start</button> <img class="note-image" src=""> <div class="note-rec-piano"> <div class="c white-key key"> <h1 class="key-text">C</h1> </div><!-- --><div class="d white-key key"> <h1 class="key-text">D</h1> </div><!-- --><div class="e white-key key"> <h1 class="key-text">E</h1> </div><!-- --><div class="f white-key key"> <h1 class="key-text">F</h1> </div><!-- --><div class="g white-key key"> <h1 class="key-text">G</h1> </div><!-- --><div class="a white-key key"> <h1 class="key-text">A</h1> </div><!-- --><div class="b white-key key"> <h1 class="key-text">B</h1> </div> <div class="db black-key key"> <h2 class="key-text">C#</h2><br> <h2 class="key-text">D♭</h2> </div> <div class="eb black-key key"> <h2 class="key-text">D#</h2><br> <h2 class="key-text">E♭</h2> </div> <div class="gb black-key key"> <h2 class="key-text">F#</h2><br> <h2 class="key-text">G♭</h2> </div> <div class="ab black-key key"> <h2 class="key-text">G#</h2><br> <h2 class="key-text">A♭</h2> </div> <div class="bb black-key key"> <h2 class="key-text">A#</h2><br> <h2 class="key-text">B♭</h2> </div> </div> </div> </div> </div>';
     updateListener();
 
     changeDifficulty("easy", "note");
@@ -993,14 +993,15 @@ function noteRecStart(back) {
         document.querySelector(".note-rec>p").innerHTML = "Points: " + pitchRecPoints;
         document.querySelector(".note-rec-start").innerHTML = "Stop";
         document.querySelector(".note-rec-start").style.backgroundImage = "linear-gradient(to bottom left, red, rgb(139, 4, 4)";
+        document.querySelector(".rec-title").style.display = "none";
         noteRecNextLevel(pitchRecDifficulty);
     } else {
         noteRecStarted = false;
         if (back == "yes") {return;}
         document.querySelector(".note-rec-start").innerHTML = "Start";
         document.querySelector(".note-rec-start").style.backgroundImage = "linear-gradient(to bottom right, rgb(46, 252, 46), green)";
-        pitchRecLevel = 0;
-        document.querySelector(".rec-level").innerHTML = "Note Recognition - " + pitchRecDifficulty;
+        document.querySelector(".rec-title").style.display = "block";
+        document.querySelector(".rec-title").innerHTML = "Note Recognition - " + pitchRecDifficulty;
         interval = null;
         document.querySelector(".note-image").setAttribute("src", "");
         document.querySelector(".c").innerHTML = noteName.c;
@@ -1020,7 +1021,6 @@ function noteRecStart(back) {
 }
 function noteRecNextLevel(difficulty) {
     pitchRecLevel++;    
-    document.querySelector(".rec-level").innerHTML = "Level " + pitchRecLevel;
     if (difficulty == "easy") {
         var n = Math.floor(Math.random() * 7 + 1);
         if (n == 1) {
@@ -1970,9 +1970,9 @@ document.querySelector(".note-image").setAttribute("src", "Design/note-recogniti
 function changeDifficulty(difficulty, kind) {
     pitchRecDifficulty = difficulty;
     if (kind == "pitch") {
-        document.querySelector(".rec-level").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
+        document.querySelector(".rec-title").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
     } if (kind == "note") {
-        document.querySelector(".rec-level").innerHTML = "Note Recognition - " + pitchRecDifficulty;   
+        document.querySelector(".rec-title").innerHTML = "Note Recognition - " + pitchRecDifficulty;   
     }
     if (pitchRecStarted) {
         pitchRecStart();
@@ -2061,7 +2061,7 @@ function pitchRecStart(back) {
         if (back == "yes") {return;}
         document.querySelector(".pitch-rec-start").innerHTML = "Start";
         document.querySelector(".pitch-rec-start").style.backgroundImage = "linear-gradient(to bottom right, rgb(46, 252, 46), green)";
-        document.querySelector(".rec-level").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
+        document.querySelector(".rec-title").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
         document.querySelector(".c").innerHTML = noteName.c;
         document.querySelector(".d").innerHTML = noteName.d;
         document.querySelector(".e").innerHTML = noteName.e;
@@ -2078,7 +2078,6 @@ function pitchRecStart(back) {
 }
 function pitchRecNextLevel(difficulty) {
     pitchRecLevel++;    
-    document.querySelector(".rec-level").innerHTML = "Level " + pitchRecLevel;
     pauseAudio();
     if (difficulty == "easy") {
         var n = Math.floor(Math.random() * 7 + 1);

@@ -411,7 +411,7 @@ img {
     background-color: transparent;
     margin: 0 auto;
 }
-.rec-level{
+.rec-title{
     font-size: 4vw;
     margin: 0;
 }
@@ -432,7 +432,7 @@ img {
     box-shadow: 0 0 0;
     margin-top: 1.95vw;
 }
-.piano, .note-rec-piano {
+.piano, .note-rec-piano{
     position: absolute;
     border: 6px solid black;
     border-radius: 25px;
@@ -441,7 +441,7 @@ img {
     height: 60%;
     margin: 0 auto 0 auto;
     padding: 0;
-    bottom: 3%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     -webkit-border-radius: 25px;
@@ -550,7 +550,7 @@ visibility: hidden;
     visibility: visible;
 }
 .note-rec-piano {
-    height: 45%;
+    height: 50%;
 }
 .note-rec-piano h1 {
     top: 60%;
@@ -566,7 +566,8 @@ visibility: hidden;
     width: 15%;
 }
 .note-image {
-    width: 17%;
+    height: 45%;
+    width: auto;
     position: relative;
     right: 1%;
 }
