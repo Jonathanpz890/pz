@@ -2932,7 +2932,7 @@ function changeSolo(solo) {
         document.querySelector(".solo-bpm").setAttribute("max", "190");
         document.querySelector(".solo-bpm-scrubber").setAttribute("max", "190");
         document.querySelector(".solo-bpm-scrubber").setAttribute("value", "190");
-        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="design/exist/exist1-1.png"> <img class="tab-images" src="design/exist/exist1-2.png"> <img class="tab-images" src="design/exist/exist1-3.png"> <img class="tab-images" src="design/exist/exist1-4.png"> <img class="tab-images" src="design/exist/exist1-5.png"> <img class="tab-images" src="design/exist/exist1-6.png"> <img class="tab-images" src="design/exist/exist1-7.png"> <img class="tab-images" src="design/exist/exist1-8.png"> <img class="tab-images" src="design/exist/exist1-9.png">';
+        document.querySelector(".guitar-1").innerHTML = '<img class="tab-images" src="Design/exist/exist1-1.png"> <img class="tab-images" src="Design/exist/exist1-2.png"> <img class="tab-images" src="Design/exist/exist1-3.png"> <img class="tab-images" src="Design/exist/exist1-4.png"> <img class="tab-images" src="Design/exist/exist1-5.png"> <img class="tab-images" src="Design/exist/exist1-6.png"> <img class="tab-images" src="Design/exist/exist1-7.png"> <img class="tab-images" src="Design/exist/exist1-8.png"> <img class="tab-images" src="Design/exist/exist1-9.png">';
         soloBpm = 190;
         document.querySelector(".solo-bpm-scrubber").value = soloBpm;
         changeBpmNumber();
