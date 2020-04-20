@@ -108,8 +108,10 @@ var note = {
     gb5: new Audio("Design/Pitch-recognition/Audio/gb5.m4a"),
     gb6: new Audio("Design/Pitch-recognition/Audio/gb6.m4a")
 };
+var toolbarOpened = false;
 
 start();
+document.querySelector("#main-menu").style.display = "none";
 
 document.addEventListener("keydown", function(e) {
     if (e.key == "Escape" && document.querySelector("#open-screen").style.display === "none") {
@@ -3316,11 +3318,12 @@ function changeFS(fs) {
 
 }
 function openToolbar() {
-    var toolbarRight = document.querySelector(".toolbar").style.right;
-    if (toolbarRight == "-25%") {
+    if (!toolbarOpened) {
+        toolbarOpened = true;
         document.querySelector(".toolbar").style.right = "0";
         document.querySelector("#main-menu").style.left = "-25%";
     } else {
+        toolbarOpened = false;
         document.querySelector(".toolbar").style.right = "-25%";
         document.querySelector("#main-menu").style.left = "0";
     }
