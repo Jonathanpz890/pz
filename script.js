@@ -109,6 +109,8 @@ var note = {
     gb6: new Audio("Design/Pitch-recognition/Audio/gb6.m4a")
 };
 
+start();
+
 document.addEventListener("keydown", function(e) {
     if (e.key == "Escape" && document.querySelector("#open-screen").style.display === "none") {
         back();
@@ -984,6 +986,27 @@ function noteRec() {
     }
 
 }
+function tool(tool) {
+    if (tool == "tuner") {
+        document.querySelector("#main-menu").style.display = "none";
+        document.querySelector("#skill-container").innerHTML = '';
+    }
+    if (tool == "metronome") {
+        
+    }
+    if (tool == "chord-charts") {
+        
+    }
+    if (tool == "chord-progression") {
+        
+    }
+}
+
+
+
+
+
+
 //note recognition shiitittttt
 function noteRecStart(back) {
     if (!noteRecStarted) {
@@ -3292,4 +3315,13 @@ function changeFS(fs) {
     }
 
 }
-
+function openToolbar() {
+    var toolbarRight = document.querySelector(".toolbar").style.right;
+    if (toolbarRight == "-25%") {
+        document.querySelector(".toolbar").style.right = "0";
+        document.querySelector("#main-menu").style.left = "-25%";
+    } else {
+        document.querySelector(".toolbar").style.right = "-25%";
+        document.querySelector("#main-menu").style.left = "0";
+    }
+}
