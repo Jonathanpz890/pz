@@ -109,8 +109,11 @@ var note = {
     gb6: new Audio("Design/Pitch-recognition/Audio/gb6.m4a")
 };
 var toolbarOpened = false;
+var toggled = false;
+var timeout;
 
 start();
+tool('tuner');
 document.querySelector("#main-menu").style.display = "none";
 
 document.addEventListener("keydown", function(e) {
@@ -781,7 +784,7 @@ function pitchRec() {
         bb: document.querySelector(".bb").innerHTML,
     }
     changeDifficulty("easy", "pitch");
-    loopAudio();
+    loopAudio('true');
     document.querySelector(".rec-title").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
     //play the notes on the piano when pressing and checks answer
     for (i = 0; i < 12; i++) {
@@ -989,9 +992,52 @@ function noteRec() {
 
 }
 function tool(tool) {
+    openToolbar();
     if (tool == "tuner") {
         document.querySelector("#main-menu").style.display = "none";
-        document.querySelector("#skill-container").innerHTML = '';
+        document.querySelector("#skill-container").innerHTML = '<div id="tuner"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Tuner</h1> </div> </div> <div class="skill-options"> <button class="skill-option-buttons" onclick="changeTuning(\'standard\')">Standard <span class="tooltip-text">E A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-d\')">Drop D <span class="tooltip-text">D A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-c#\')">Drop C# <span class="tooltip-text">C# A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-c\')">Drop C <span class="tooltip-text">C G C F A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-b\')">Drop B <span class="tooltip-text">B G♭ B E A♭ D♭</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-a\')">Drop A <span class="tooltip-text">A E A D G♭ B</button> <button class="skill-option-buttons" onclick="changeTuning(\'dadgad\')">DADGAD <span class="tooltip-text">D A D G A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'half-step-down\')">Half Step Down <span class="tooltip-text">E♭ A♭ D♭ G♭ B♭ A♭</button> <button class="skill-option-buttons" onclick="changeTuning(\'full-step-down\')">Full Step Down <span class="tooltip-text">D G C F A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'half-step-up\')">Half Step Up <span class="tooltip-text">F A# D# G# C F</button> </div> <div class="skill-display"> <div class="inner-display tuning-headstock"><div class="switch"><span class="slider"></span><h3>Loop</h3></div> <div class="note-circles1"><button class="note-button-third" >D</button> <button class="note-button-second" >A</button> <button class="note-button-first" >E</button> </div> <img src="Design/headstock.png" id="headstock"> <div class="note-circles2"> <button class="note-button-fourth" >G</button> <button class="note-button-fifth" >B</button> <button class="note-button-sixth" >e</button> </div> </div> </div> </div>';
+        changeTuning('standard');
+        function updateCircles() {
+            var circleWidth = document.querySelector(".note-button-third").offsetHeight + "px";
+            document.querySelector(".note-circles1").style.width = circleWidth;
+            document.querySelector(".note-circles2").style.width = circleWidth;
+            for (i = 0; i < 6; i++) {
+                document.querySelector(".tuning-headstock").querySelectorAll("button")[i].style.width = circleWidth;
+                document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                    var button = this;
+                    for (i = 0; i < 6; i++) {
+                        document.querySelector(".tuning-headstock").querySelectorAll("button")[i].style.backgroundImage = "linear-gradient(to bottom right, rgb(26, 26, 26), rgb(99, 99, 99))";
+                    }
+                    this.style.backgroundImage = "linear-gradient(to bottom left, rgb(4, 116, 4), rgb(13, 196, 19))";
+                    if (toggled) {return};
+                    timeout = setTimeout(function() {
+                        button.style.backgroundImage = "linear-gradient(to bottom right, rgb(26, 26, 26), rgb(99, 99, 99))";
+                    }, 5000)
+
+                })
+            }
+        }
+        updateCircles();
+        window.onresize = updateCircles;
+        document.querySelector(".switch").addEventListener("click", function() {
+            if (!toggled) {
+                toggled = true;
+                loopAudio('true');
+                document.querySelector(".switch").style.backgroundColor = "dodgerblue";
+                document.querySelector(".slider").style = "left: unset; right: 6%;"
+                window.clearTimeout(timeout);
+            } else {
+                toggled = false;
+                loopAudio('false');
+                pauseAudio();
+                document.querySelector(".switch").style.backgroundColor = "darkgrey";
+                document.querySelector(".slider").style = "left: 6%; right: unset;"
+                for (i = 0; i < 6; i++) {
+                    document.querySelector(".tuning-headstock").querySelectorAll("button")[i].style.backgroundImage = "linear-gradient(to bottom right, rgb(26, 26, 26), rgb(99, 99, 99))";
+                }
+            }
+
+        })
     }
     if (tool == "metronome") {
         
@@ -1003,12 +1049,310 @@ function tool(tool) {
         
     }
 }
-
-
-
-
-
-
+//tuner shit
+function changeTuning(tuning) {
+    if (tuning == "standard") {
+        document.querySelector(".note-button-first").innerHTML = "E";
+        document.querySelector(".note-button-second").innerHTML = "A";
+        document.querySelector(".note-button-third").innerHTML = "D";
+        document.querySelector(".note-button-fourth").innerHTML = "G";
+        document.querySelector(".note-button-fifth").innerHTML = "B";
+        document.querySelector(".note-button-sixth").innerHTML = "e";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.e2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.a2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.d3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.g3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.b3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.e4.play();
+                } 
+            })
+        }
+    } if (tuning == "drop-d") {
+        document.querySelector(".note-button-first").innerHTML = "D";
+        document.querySelector(".note-button-second").innerHTML = "A";
+        document.querySelector(".note-button-third").innerHTML = "D";
+        document.querySelector(".note-button-fourth").innerHTML = "G";
+        document.querySelector(".note-button-fifth").innerHTML = "B";
+        document.querySelector(".note-button-sixth").innerHTML = "e";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.d2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.a2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.d3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.g3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.b3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.e4.play();
+                } 
+            })
+        }
+    } if (tuning == "drop-c#") {
+        document.querySelector(".note-button-first").innerHTML = "C#";
+        document.querySelector(".note-button-second").innerHTML = "A";
+        document.querySelector(".note-button-third").innerHTML = "D";
+        document.querySelector(".note-button-fourth").innerHTML = "G";
+        document.querySelector(".note-button-fifth").innerHTML = "B";
+        document.querySelector(".note-button-sixth").innerHTML = "e";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.db2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.a2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.d3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.g3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.b3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.e4.play();
+                } 
+            })
+        }
+    } if (tuning == "drop-c") {
+        document.querySelector(".note-button-first").innerHTML = "C";
+        document.querySelector(".note-button-second").innerHTML = "G";
+        document.querySelector(".note-button-third").innerHTML = "C";
+        document.querySelector(".note-button-fourth").innerHTML = "F";
+        document.querySelector(".note-button-fifth").innerHTML = "A";
+        document.querySelector(".note-button-sixth").innerHTML = "D";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.c2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.g2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.c3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.f3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.a3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.d4.play();
+                } 
+            })
+        }
+    } if (tuning == "drop-b") {
+        document.querySelector(".note-button-first").innerHTML = "B";
+        document.querySelector(".note-button-second").innerHTML = "G♭";
+        document.querySelector(".note-button-third").innerHTML = "B";
+        document.querySelector(".note-button-fourth").innerHTML = "E";
+        document.querySelector(".note-button-fifth").innerHTML = "A♭";
+        document.querySelector(".note-button-sixth").innerHTML = "D♭";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.b1.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.gb2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.b2.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.e3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.ab3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.db4.play();
+                } 
+            })
+        }
+    } if (tuning == "drop-a") {
+        document.querySelector(".note-button-first").innerHTML = "A";
+        document.querySelector(".note-button-second").innerHTML = "E";
+        document.querySelector(".note-button-third").innerHTML = "A";
+        document.querySelector(".note-button-fourth").innerHTML = "D";
+        document.querySelector(".note-button-fifth").innerHTML = "G♭";
+        document.querySelector(".note-button-sixth").innerHTML = "B";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.a1.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.e2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.a2.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.d3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.gb3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.b3.play();
+                } 
+            })
+        }
+    } if (tuning == "dadgad") {
+        document.querySelector(".note-button-first").innerHTML = "D";
+        document.querySelector(".note-button-second").innerHTML = "A";
+        document.querySelector(".note-button-third").innerHTML = "D";
+        document.querySelector(".note-button-fourth").innerHTML = "G";
+        document.querySelector(".note-button-fifth").innerHTML = "A";
+        document.querySelector(".note-button-sixth").innerHTML = "D";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.d2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.a2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.d3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.g3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.a3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.d4.play();
+                }  
+            })
+        }
+    } if (tuning == "half-step-down") {
+        document.querySelector(".note-button-first").innerHTML = "E♭";
+        document.querySelector(".note-button-second").innerHTML = "A♭";
+        document.querySelector(".note-button-third").innerHTML = "D♭";
+        document.querySelector(".note-button-fourth").innerHTML = "G♭";
+        document.querySelector(".note-button-fifth").innerHTML = "B♭";
+        document.querySelector(".note-button-sixth").innerHTML = "D♭";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.eb2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.ab2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.db3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.gb3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.bb3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.eb4.play();
+                } 
+            })
+        }
+    } if (tuning == "full-step-down") {
+        document.querySelector(".note-button-first").innerHTML = "D";
+        document.querySelector(".note-button-second").innerHTML = "G";
+        document.querySelector(".note-button-third").innerHTML = "C";
+        document.querySelector(".note-button-fourth").innerHTML = "F";
+        document.querySelector(".note-button-fifth").innerHTML = "A";
+        document.querySelector(".note-button-sixth").innerHTML = "D";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.d2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.g2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.c3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.f3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.a3.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.d4.play();
+                } 
+            })
+        }
+    } if (tuning == "half-step-up") {
+        document.querySelector(".note-button-first").innerHTML = "F";
+        document.querySelector(".note-button-second").innerHTML = "A#";
+        document.querySelector(".note-button-third").innerHTML = "D#";
+        document.querySelector(".note-button-fourth").innerHTML = "G#";
+        document.querySelector(".note-button-fifth").innerHTML = "C";
+        document.querySelector(".note-button-sixth").innerHTML = "F";
+        for (i = 0; i < 6; i++) {
+            document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
+                if (this.classList[0] == "note-button-first") {
+                    pauseAudio();
+                    note.f2.play();
+                } if (this.classList[0] == "note-button-second") {
+                    pauseAudio();
+                    note.bb2.play();
+                } if (this.classList[0] == "note-button-third") {
+                    pauseAudio();
+                    note.eb3.play();
+                } if (this.classList[0] == "note-button-fourth") {
+                    pauseAudio();
+                    note.ab3.play();
+                } if (this.classList[0] == "note-button-fifth") {
+                    pauseAudio();
+                    note.c4.play();
+                } if (this.classList[0] == "note-button-sixth") {
+                    pauseAudio();
+                    note.f4.play();
+                } 
+            })
+        }
+    }
+}
 //note recognition shiitittttt
 function noteRecStart(back) {
     if (!noteRecStarted) {
@@ -1993,7 +2337,6 @@ document.querySelector(".note-image").setAttribute("src", "Design/note-recogniti
 //-----------------------------------------------------
 
 //pitch recognition shiiiitttt-------------------------
-//change difficulty
 function changeDifficulty(difficulty, kind) {
     pitchRecDifficulty = difficulty;
     if (kind == "pitch") {
@@ -2071,7 +2414,6 @@ function changeDifficulty(difficulty, kind) {
     }
 
 }
-//starts the game and next level functions
 function pitchRecStart(back) {
     if (!pitchRecStarted) {
         if (back == "yes") {return;}
@@ -2574,7 +2916,7 @@ function pitchRecNextLevel(difficulty) {
     }
 }
 
-
+//audio shit
 function pauseAudio() {
     note.c4key.pause();
     note.d4key.pause();
@@ -2749,80 +3091,80 @@ function pauseAudio() {
     note.bb4key.currentTime = 0;
 
 }
-function loopAudio() {
-    note.a1.loop = true;
-    note.a2.loop = true;
-    note.a3.loop = true;
-    note.a4.loop = true;
-    note.a5.loop = true;
-    note.a6.loop = true;
-    note.b1.loop = true;
-    note.b2.loop = true;
-    note.b3.loop = true;
-    note.b4.loop = true;
-    note.b5.loop = true;
-    note.b6.loop = true;
-    note.c1.loop = true;
-    note.c2.loop = true;
-    note.c3.loop = true;
-    note.c4.loop = true;
-    note.c5.loop = true;
-    note.c6.loop = true;
-    note.d1.loop = true;
-    note.d2.loop = true;
-    note.d3.loop = true;
-    note.d4.loop = true;
-    note.d5.loop = true;
-    note.d6.loop = true;
-    note.e1.loop = true;
-    note.e2.loop = true;
-    note.e3.loop = true;
-    note.e4.loop = true;
-    note.e5.loop = true;
-    note.e6.loop = true;
-    note.f1.loop = true;
-    note.f2.loop = true;
-    note.f3.loop = true;
-    note.f4.loop = true;
-    note.f5.loop = true;
-    note.f6.loop = true;
-    note.g1.loop = true;
-    note.g2.loop = true;
-    note.g3.loop = true;
-    note.g4.loop = true;
-    note.g5.loop = true;
-    note.g6.loop = true;
+function loopAudio(boolean) {
+    note.a1.loop = boolean;
+    note.a2.loop = boolean;
+    note.a3.loop = boolean;
+    note.a4.loop = boolean;
+    note.a5.loop = boolean;
+    note.a6.loop = boolean;
+    note.b1.loop = boolean;
+    note.b2.loop = boolean;
+    note.b3.loop = boolean;
+    note.b4.loop = boolean;
+    note.b5.loop = boolean;
+    note.b6.loop = boolean;
+    note.c1.loop = boolean;
+    note.c2.loop = boolean;
+    note.c3.loop = boolean;
+    note.c4.loop = boolean;
+    note.c5.loop = boolean;
+    note.c6.loop = boolean;
+    note.d1.loop = boolean;
+    note.d2.loop = boolean;
+    note.d3.loop = boolean;
+    note.d4.loop = boolean;
+    note.d5.loop = boolean;
+    note.d6.loop = boolean;
+    note.e1.loop = boolean;
+    note.e2.loop = boolean;
+    note.e3.loop = boolean;
+    note.e4.loop = boolean;
+    note.e5.loop = boolean;
+    note.e6.loop = boolean;
+    note.f1.loop = boolean;
+    note.f2.loop = boolean;
+    note.f3.loop = boolean;
+    note.f4.loop = boolean;
+    note.f5.loop = boolean;
+    note.f6.loop = boolean;
+    note.g1.loop = boolean;
+    note.g2.loop = boolean;
+    note.g3.loop = boolean;
+    note.g4.loop = boolean;
+    note.g5.loop = boolean;
+    note.g6.loop = boolean;
 
-    note.ab1.loop = true;
-    note.ab2.loop = true;
-    note.ab3.loop = true;
-    note.ab4.loop = true;
-    note.ab5.loop = true;
-    note.ab6.loop = true;
-    note.bb1.loop = true;
-    note.bb2.loop = true;
-    note.bb3.loop = true;
-    note.bb4.loop = true;
-    note.bb5.loop = true;
-    note.bb6.loop = true;
-    note.db1.loop = true;
-    note.db2.loop = true;
-    note.db3.loop = true;
-    note.db4.loop = true;
-    note.db5.loop = true;
-    note.db6.loop = true;
-    note.eb1.loop = true;
-    note.eb2.loop = true;
-    note.eb3.loop = true;
-    note.eb4.loop = true;
-    note.eb5.loop = true;
-    note.eb6.loop = true;
-    note.gb1.loop = true;
-    note.gb2.loop = true;
-    note.gb3.loop = true;
-    note.gb4.loop = true;
-    note.gb5.loop = true;
-    note.gb6.loop = true;
+    note.ab1.loop = boolean;
+    note.ab2.loop = boolean;
+    note.ab3.loop = boolean;
+    note.ab4.loop = boolean;
+    note.ab5.loop = boolean;
+    note.ab6.loop = boolean;
+    note.bb1.loop = boolean;
+    note.bb2.loop = boolean;
+    note.bb3.loop = boolean;
+    note.bb4.loop = boolean;
+    note.bb5.loop = boolean;
+    note.bb6.loop = boolean;
+    note.db1.loop = boolean;
+    note.db2.loop = boolean;
+    note.db3.loop = boolean;
+    note.db4.loop = boolean;
+    note.db5.loop = boolean;
+    note.db6.loop = boolean;
+    note.eb1.loop = boolean;
+    note.eb2.loop = boolean;
+    note.eb3.loop = boolean;
+    note.eb4.loop = boolean;
+    note.eb5.loop = boolean;
+    note.eb6.loop = boolean;
+    note.gb1.loop = boolean;
+    note.gb2.loop = boolean;
+    note.gb3.loop = boolean;
+    note.gb4.loop = boolean;
+    note.gb5.loop = boolean;
+    note.gb6.loop = boolean;
 }
 //-----------------------------------------------------
 
