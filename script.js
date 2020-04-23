@@ -112,10 +112,6 @@ var toolbarOpened = false;
 var toggled = false;
 var timeout;
 
-start();
-tool('tuner');
-document.querySelector("#main-menu").style.display = "none";
-
 document.addEventListener("keydown", function(e) {
     if (e.key == "Escape" && document.querySelector("#open-screen").style.display === "none") {
         back();
