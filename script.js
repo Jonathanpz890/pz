@@ -780,7 +780,7 @@ function pitchRec() {
         bb: document.querySelector(".bb").innerHTML,
     }
     changeDifficulty("easy", "pitch");
-    loopAudio('true');
+    loopAudio(true);
     document.querySelector(".rec-title").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
     //play the notes on the piano when pressing and checks answer
     for (i = 0; i < 12; i++) {
@@ -1018,13 +1018,13 @@ function tool(tool) {
         document.querySelector(".switch").addEventListener("click", function() {
             if (!toggled) {
                 toggled = true;
-                loopAudio('true');
+                loopAudio(true);
                 document.querySelector(".switch").style.backgroundColor = "dodgerblue";
                 document.querySelector(".slider").style = "left: unset; right: 6%;"
                 window.clearTimeout(timeout);
             } else {
                 toggled = false;
-                loopAudio('false');
+                loopAudio(false);
                 pauseAudio();
                 document.querySelector(".switch").style.backgroundColor = "darkgrey";
                 document.querySelector(".slider").style = "left: 6%; right: unset;"
