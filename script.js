@@ -116,11 +116,8 @@ document.addEventListener("keydown", function(e) {
     if (e.key == "Escape" && document.querySelector("#open-screen").style.display === "none") {
         back();
     }
-})
+});
 alarm.loop = true;
-metro.addEventListener("ended", function() {
-    metro.play();
-})
 //goes to main menu from open screen
 function start() {
     document.querySelector("#open-screen").style.display = "none";
@@ -145,28 +142,28 @@ function alternate() {
         document.querySelector(".alternate-major").style.display = "none";
         document.querySelector(".alternate-minor").style.display = "none";
         document.querySelector(".alternate-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".alternate-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".alternate-syn").style.display = "none";
         document.querySelector(".alternate-major").style.display = "block";
         document.querySelector(".alternate-minor").style.display = "none";
         document.querySelector(".alternate-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".alternate-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".alternate-syn").style.display = "none";
         document.querySelector(".alternate-major").style.display = "none";
         document.querySelector(".alternate-minor").style.display = "block";
         document.querySelector(".alternate-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".alternate-modes-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".alternate-syn").style.display = "none";
         document.querySelector(".alternate-major").style.display = "none";
         document.querySelector(".alternate-minor").style.display = "none";
         document.querySelector(".alternate-modes").style.display = "block";    
-    })
+    });
 }
 function sweep() {
     document.querySelector("#main-menu").style.display = "none";
@@ -181,28 +178,28 @@ function sweep() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".sweeping-syn").style.display = "block";
         document.querySelector(".sweeping-exist").style.display = "none";
-    })
+    });
     document.querySelector(".sweeping-exist-button").addEventListener("click", function() {
         soloBpm = 190;
         document.querySelector(".source").style.display = "none";
         document.querySelector(".sweeping-syn").style.display = "none";
         document.querySelector(".sweeping-exist").style.display = "block";
-    })
+    });
 
     document.querySelector(".sweeping-exist-tabs-one").addEventListener("click", function() {
         document.querySelector(".guitar-1").style.display = "block";
         document.querySelector(".guitar-2").style.display = "none";
-    })
+    });
     document.querySelector(".sweeping-exist-tabs-two").addEventListener("click", function() {
         document.querySelector(".guitar-1").style.display = "none";
         document.querySelector(".guitar-2").style.display = "block";
-    })
+    });
     document.querySelector(".solo-bpm").value = document.querySelector(".solo-bpm-scrubber").value;
 
 }
 function economy() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="economy-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Economy Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons economy-syn-button">SYN\'s Etude</button><button class="skill-option-buttons economy-major-button">Major Scales</button><button class="skill-option-buttons economy-minor-button">Minor Scales</button><button class="skill-option-buttons economy-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display economy-syn">            <h1 class="syn-title">Economy Picking I</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-i.106/"> <img class="tab-images" src="Design/syn/economy1.png"> </a> <h1 class="syn-title">Economy Picking II</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-ii.107/"> <img class="tab-images" src="Design/syn/economy2.png"> </a> <h1 class="syn-title">Economy Picking III</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-iii.108/"> <img class="tab-images" src="Design/syn/economy3.png"> </a> <h1 class="syn-title">Economy Picking IV</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-iv.109/"> <img class="tab-images" src="Design/syn/economy4.png"> </a> <h1 class="syn-title">Economy Picking V</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-v.110/"> <img class="tab-images" src="Design/syn/economy5.png"> </a> <h1 class="syn-title">Economy Picking VI</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-vi.111/"> <img class="tab-images" src="Design/syn/economy6-1.png"><img class="tab-images" src="Design/syn/economy6-2.png"> </a> <h1 class="syn-title">Economy Picking VII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-vii.112/"> <img class="tab-images" src="Design/syn/economy7.png"> </a> <h1 class="syn-title">Economy Picking VIII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-viii.113/"> <img class="tab-images" src="Design/syn/economy8.png"> </a> <h1 class="syn-title">Economy Picking IX</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-ix.114/"> <img class="tab-images" src="Design/syn/economy9.png"> </a> <h1 class="syn-title">Economy Picking X</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-x.115/"> <img class="tab-images" src="Design/syn/economy10.png"> </a></div><div class="inner-display economy-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>'
+    document.querySelector("#skill-container").innerHTML = '<div id="economy-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Economy Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons economy-syn-button">SYN\'s Etude</button><button class="skill-option-buttons economy-major-button">Major Scales</button><button class="skill-option-buttons economy-minor-button">Minor Scales</button><button class="skill-option-buttons economy-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display economy-syn">            <h1 class="syn-title">Economy Picking I</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-i.106/"> <img class="tab-images" src="Design/syn/economy1.png"> </a> <h1 class="syn-title">Economy Picking II</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-ii.107/"> <img class="tab-images" src="Design/syn/economy2.png"> </a> <h1 class="syn-title">Economy Picking III</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-iii.108/"> <img class="tab-images" src="Design/syn/economy3.png"> </a> <h1 class="syn-title">Economy Picking IV</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-iv.109/"> <img class="tab-images" src="Design/syn/economy4.png"> </a> <h1 class="syn-title">Economy Picking V</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-v.110/"> <img class="tab-images" src="Design/syn/economy5.png"> </a> <h1 class="syn-title">Economy Picking VI</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-vi.111/"> <img class="tab-images" src="Design/syn/economy6-1.png"><img class="tab-images" src="Design/syn/economy6-2.png"> </a> <h1 class="syn-title">Economy Picking VII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-vii.112/"> <img class="tab-images" src="Design/syn/economy7.png"> </a> <h1 class="syn-title">Economy Picking VIII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-viii.113/"> <img class="tab-images" src="Design/syn/economy8.png"> </a> <h1 class="syn-title">Economy Picking IX</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-ix.114/"> <img class="tab-images" src="Design/syn/economy9.png"> </a> <h1 class="syn-title">Economy Picking X</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/economy-picking-x.115/"> <img class="tab-images" src="Design/syn/economy10.png"> </a></div><div class="inner-display economy-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display economy-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>';
     updateListener();
     document.querySelector(".economy-syn-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -210,28 +207,28 @@ function economy() {
         document.querySelector(".economy-major").style.display = "none";
         document.querySelector(".economy-minor").style.display = "none";
         document.querySelector(".economy-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".economy-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".economy-syn").style.display = "none";
         document.querySelector(".economy-major").style.display = "block";
         document.querySelector(".economy-minor").style.display = "none";
         document.querySelector(".economy-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".economy-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".economy-syn").style.display = "none";
         document.querySelector(".economy-major").style.display = "none";
         document.querySelector(".economy-minor").style.display = "block";
         document.querySelector(".economy-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".economy-modes-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".economy-syn").style.display = "none";
         document.querySelector(".economy-major").style.display = "none";
         document.querySelector(".economy-minor").style.display = "none";
         document.querySelector(".economy-modes").style.display = "block";    
-    })
+    });
 }
 function tapping() {
     document.querySelector("#main-menu").style.display = "none";
@@ -242,11 +239,11 @@ function tapping() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".tapping-syn").style.display = "block";
 
-    })
+    });
 }
 function legato() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="legato-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Legato Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons legato-syn-button">SYN\'s Etude</button><button class="skill-option-buttons legato-major-button">Major Scales</button><button class="skill-option-buttons legato-minor-button">Minor Scales</button><button class="skill-option-buttons legato-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display legato-syn">            <h1 class="syn-title">Legato Picking I</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-i.116/"> <img class="tab-images" src="Design/syn/legato1.png"> </a> <h1 class="syn-title">Legato Picking II</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-ii.117/"> <img class="tab-images" src="Design/syn/legato2.png"> </a> <h1 class="syn-title">Legato Picking III</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-iii.118/"> <img class="tab-images" src="Design/syn/legato3.png"> </a> <h1 class="syn-title">Legato Picking IV</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-iv.119/"> <img class="tab-images" src="Design/syn/legato4.png"> </a> <h1 class="syn-title">Legato Picking V</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-v.120/"> <img class="tab-images" src="Design/syn/legato5.png"> </a> <h1 class="syn-title">Legato Picking VI</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-vi.121/"> <img class="tab-images" src="Design/syn/legato6.png"> </a> <h1 class="syn-title">Legato Picking VII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-vii.122/"> <img class="tab-images" src="Design/syn/legato7.png"> </a> <h1 class="syn-title">Legato Picking VIII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-viii.123/"> <img class="tab-images" src="Design/syn/legato8.png"> </a> <h1 class="syn-title">Legato Picking IX</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-ix.124/"> <img class="tab-images" src="Design/syn/legato9.png"> </a> <h1 class="syn-title">Legato Picking X</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-x.125/"> <img class="tab-images" src="Design/syn/legato10-1.png"> <img class="tab-images" src="Design//syn/legato10-2.png"></div><div class="inner-display legato-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>'
+    document.querySelector("#skill-container").innerHTML = '<div id="legato-picking"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Legato Picking</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div><div class="skill-options"><button class="skill-option-buttons legato-syn-button">SYN\'s Etude</button><button class="skill-option-buttons legato-major-button">Major Scales</button><button class="skill-option-buttons legato-minor-button">Minor Scales</button><button class="skill-option-buttons legato-modes-button">Modes</button>            <div class="metronome"><button class="metro-button">-</button><input type="number" class="bpm" name="bpm" value="100"><button class="metro-button">+</button><br><button class="metro-play"></button><button class="metro-pause"></button></div></div><div class="skill-display"><div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Source</div><div class="inner-display legato-syn">            <h1 class="syn-title">Legato Picking I</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-i.116/"> <img class="tab-images" src="Design/syn/legato1.png"> </a> <h1 class="syn-title">Legato Picking II</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-ii.117/"> <img class="tab-images" src="Design/syn/legato2.png"> </a> <h1 class="syn-title">Legato Picking III</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-iii.118/"> <img class="tab-images" src="Design/syn/legato3.png"> </a> <h1 class="syn-title">Legato Picking IV</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-iv.119/"> <img class="tab-images" src="Design/syn/legato4.png"> </a> <h1 class="syn-title">Legato Picking V</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-v.120/"> <img class="tab-images" src="Design/syn/legato5.png"> </a> <h1 class="syn-title">Legato Picking VI</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-vi.121/"> <img class="tab-images" src="Design/syn/legato6.png"> </a> <h1 class="syn-title">Legato Picking VII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-vii.122/"> <img class="tab-images" src="Design/syn/legato7.png"> </a> <h1 class="syn-title">Legato Picking VIII</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-viii.123/"> <img class="tab-images" src="Design/syn/legato8.png"> </a> <h1 class="syn-title">Legato Picking IX</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-ix.124/"> <img class="tab-images" src="Design/syn/legato9.png"> </a> <h1 class="syn-title">Legato Picking X</h1> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href="https://syngates.com/lessons/legato-x.125/"> <img class="tab-images" src="Design/syn/legato10-1.png"> <img class="tab-images" src="Design//syn/legato10-2.png"></div><div class="inner-display legato-major"><embed src="Design/scales/major-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-minor"><embed src="Design/scales/minor-scale.pdf" width="100%" height="100%"></div><div class="inner-display legato-modes"><img class="tab-images" src="Design/scales/modes1.png"><br><img class="tab-images" src="Design/scales/modes2.png"></div></div></dv>';
     updateListener();
     document.querySelector(".legato-syn-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -254,28 +251,28 @@ function legato() {
         document.querySelector(".legato-major").style.display = "none";
         document.querySelector(".legato-minor").style.display = "none";
         document.querySelector(".legato-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".legato-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".legato-syn").style.display = "none";
         document.querySelector(".legato-major").style.display = "block";
         document.querySelector(".legato-minor").style.display = "none";
         document.querySelector(".legato-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".legato-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".legato-syn").style.display = "none";
         document.querySelector(".legato-major").style.display = "none";
         document.querySelector(".legato-minor").style.display = "block";
         document.querySelector(".legato-modes").style.display = "none";    
-    })
+    });
     document.querySelector(".legato-modes-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".legato-syn").style.display = "none";
         document.querySelector(".legato-major").style.display = "none";
         document.querySelector(".legato-minor").style.display = "none";
         document.querySelector(".legato-modes").style.display = "block";    
-    })
+    });
 }
 function pentatonics() {
     document.querySelector("#main-menu").style.display = "none";
@@ -286,23 +283,23 @@ function pentatonics() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".pentatonics-syn").style.display = "block";
         document.querySelector(".pentatonics-scales").style.display = "none";
-    })
+    });
     document.querySelector(".pentatonics-scales-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".pentatonics-syn").style.display = "none";
         document.querySelector(".pentatonics-scales").style.display = "block";
-    })
+    });
 }
 function extras() {
 
     if (!extrasOn) {
         extrasOn = true;
-        document.querySelector("#main-menu").innerHTML = '<table id="menu-table"> <tbody> <tr> <td> <button onclick="songs()" class="skill songs">Songs</button> </td> <td> <button onclick="solos()" class="skill solos">Solos</button> </td> <td> <button onclick="fingerstyle()" class="skill fingerstyle">Fingerstyle</button> </td> </tr> <tr> <td> <button onclick="backingTracks()" class="skill backing-tracks">Backing Tracks</button> </td> <td> <button onclick="pitchRec()" class="skill pitch-rec">Pitch Recognition</button> </td> <td> <button onclick="noteRec()" class="skill note-rec">Note Recognition</button> </td> </tr> <tr style="width: 80vw"> <td colspan="3"><button class="skill extra-button" onclick="extras()">Extras</button></td> </tr> </tbody> </table>'
+        document.querySelector("#main-menu").innerHTML = '<table id="menu-table"> <tbody> <tr> <td> <button onclick="songs()" class="skill songs">Songs</button> </td> <td> <button onclick="solos()" class="skill solos">Solos</button> </td> <td> <button onclick="fingerstyle()" class="skill fingerstyle">Fingerstyle</button> </td> </tr> <tr> <td> <button onclick="backingTracks()" class="skill backing-tracks">Backing Tracks</button> </td> <td> <button onclick="pitchRec()" class="skill pitch-rec">Pitch Recognition</button> </td> <td> <button onclick="noteRec()" class="skill note-rec">Note Recognition</button> </td> </tr> <tr style="width: 80vw"> <td colspan="3"><button class="skill extra-button" onclick="extras()">Extras</button></td> </tr> </tbody> </table>';
         document.querySelector(".extra-button").style = "    margin-top: calc(0.9vw); margin-bottom: calc(1vw - 0.5vw); box-shadow: 0 0 0; color: white; background-color: rgb(54, 54, 54)";
     } else {
         extrasOn = false;
         document.querySelector("#main-menu").innerHTML = mainMenu;
-        document.querySelector(".extra-button").style = ""
+        document.querySelector(".extra-button").style = "";
     }
 
 
@@ -330,7 +327,7 @@ function songs() {
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
-    })
+    });
     document.querySelector(".buried-alive-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -350,7 +347,7 @@ function songs() {
         document.querySelector(".blackened-video").pause();  
         document.querySelector(".the-last-fight-video").pause();  
         document.querySelector(".say-goodnight-video").pause();  
-    })
+    });
     document.querySelector(".second-heartbeat-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -370,7 +367,7 @@ function songs() {
         document.querySelector(".blackened-video").pause();  
         document.querySelector(".the-last-fight-video").pause();  
         document.querySelector(".say-goodnight-video").pause();  
-    })
+    });
     document.querySelector(".bulls-bronx-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -390,7 +387,7 @@ function songs() {
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
-    })
+    });
     document.querySelector(".a-place-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -410,7 +407,7 @@ function songs() {
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
-    })
+    });
     document.querySelector(".nothing-else-matters-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -430,7 +427,7 @@ function songs() {
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
-    })
+    });
     document.querySelector(".blackened-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -450,7 +447,7 @@ function songs() {
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
-    })
+    });
     document.querySelector(".the-last-fight-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -470,7 +467,7 @@ function songs() {
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
-    })
+    });
     document.querySelector(".say-goodnight-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
@@ -490,7 +487,7 @@ function songs() {
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-    })
+    });
 }
 function solos() {
     document.querySelector("#main-menu").style.display = "none";
@@ -500,7 +497,7 @@ function solos() {
 }
 function fingerstyle() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="fingerstyle"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Fingerstyle</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"> <button class="skill-option-buttons fingerstyle-buried-alive-button" onclick="changeFS(\'buried-alive\')">Buried Alive</button> <button class="skill-option-buttons fingerstyle-love-of-my-life-button" onclick="changeFS(\'love-of-my-life\')">Love Of My Life</button> <button class="skill-option-buttons fingerstyle-so-far-away-button" onclick="changeFS(\'so-far-away\')">So Far Away</button> <button class="skill-option-buttons fingerstyle-nothing-else-matters-button" onclick="changeFS(\'nothing-else-matters\')" style="font-size: 1.8vw">Nothing Else Matters</button> <button class="skill-option-buttons fingerstyle-stairway-to-heaven-button" onclick="changeFS(\'stairway-to-heaven\')" style="font-size: 2vw">Stairway To Heaven</button> </div> <div class="skill-display"> <div class="source" style="width: 100%;height: inherit;text-align: center"> <h1 >Choose A FS Song</h1> </div> <div class="inner-display fingerstyle-display"> <h1 class="solo-title" style="font-size: 4vw; margin: 0.5vw;"></h1> <div class="audio"> <audio controls class="solo-audio"> </audio> </div> <div class="solo-speed"> <button style="margin: 0;" class="metro-button" onclick="soloSpeedDown()">-</button> <input type="number" min="60" max="190" name="bpm" class="solo-bpm" oninput="changeRange(); changeSoloSpeed()"> <button style="margin: 0;" class="metro-button" onclick="soloSpeedUp()">+</button> <br><br> <input type="range" oninput="changeBpmNumber(); changeSoloSpeed()" name="bpm" min="60" max="190" value="190" class="solo-bpm-scrubber"> <br><label for="bpm">BPM</label> </div> <div class="tabs"> <h1 style="font-size: 4vw;">Tabs</h1> <button class="tabs-button" onclick="showTabs()">Tabs</button> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href=""> <button class="tabs-button">SongSterr</button> </a> <br><br> <div class="guitar-1"></div> </div> </div> </div> </div>'
+    document.querySelector("#skill-container").innerHTML = '<div id="fingerstyle"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Fingerstyle</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"> <button class="skill-option-buttons fingerstyle-buried-alive-button" onclick="changeFS(\'buried-alive\')">Buried Alive</button> <button class="skill-option-buttons fingerstyle-love-of-my-life-button" onclick="changeFS(\'love-of-my-life\')">Love Of My Life</button> <button class="skill-option-buttons fingerstyle-so-far-away-button" onclick="changeFS(\'so-far-away\')">So Far Away</button> <button class="skill-option-buttons fingerstyle-nothing-else-matters-button" onclick="changeFS(\'nothing-else-matters\')" style="font-size: 1.8vw">Nothing Else Matters</button> <button class="skill-option-buttons fingerstyle-stairway-to-heaven-button" onclick="changeFS(\'stairway-to-heaven\')" style="font-size: 2vw">Stairway To Heaven</button> </div> <div class="skill-display"> <div class="source" style="width: 100%;height: inherit;text-align: center"> <h1 >Choose A FS Song</h1> </div> <div class="inner-display fingerstyle-display"> <h1 class="solo-title" style="font-size: 4vw; margin: 0.5vw;"></h1> <div class="audio"> <audio controls class="solo-audio"> </audio> </div> <div class="solo-speed"> <button style="margin: 0;" class="metro-button" onclick="soloSpeedDown()">-</button> <input type="number" min="60" max="190" name="bpm" class="solo-bpm" oninput="changeRange(); changeSoloSpeed()"> <button style="margin: 0;" class="metro-button" onclick="soloSpeedUp()">+</button> <br><br> <input type="range" oninput="changeBpmNumber(); changeSoloSpeed()" name="bpm" min="60" max="190" value="190" class="solo-bpm-scrubber"> <br><label for="bpm">BPM</label> </div> <div class="tabs"> <h1 style="font-size: 4vw;">Tabs</h1> <button class="tabs-button" onclick="showTabs()">Tabs</button> <a target="_blank" onclick="window.open(this.href, \'_blank\', \'toolbar=no, height=740, width=5000, top=1000\')" href=""> <button class="tabs-button">SongSterr</button> </a> <br><br> <div class="guitar-1"></div> </div> </div> </div> </div>';
     updateListener();
 }
 function backingTracks() {
@@ -523,7 +520,7 @@ function backingTracks() {
         document.querySelector(".a-minor").style.display = "none";
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
-    })
+    });
     document.querySelector(".c-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -541,7 +538,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".d-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -559,7 +556,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".d-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -577,7 +574,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".e-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -595,7 +592,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".e-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -613,7 +610,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".f-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -631,7 +628,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".f-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -649,7 +646,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".g-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -667,7 +664,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".g-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -685,7 +682,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".a-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -703,7 +700,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".a-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -721,7 +718,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".b-major-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -739,7 +736,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "block";
         document.querySelector(".b-minor").style.display = "none";
 
-    })
+    });
     document.querySelector(".b-minor-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".c-major").style.display = "none";
@@ -757,7 +754,7 @@ function backingTracks() {
         document.querySelector(".b-major").style.display = "none";
         document.querySelector(".b-minor").style.display = "block";
 
-    })
+    });
 }
 function pitchRec() {
     //insert the html 
@@ -778,7 +775,7 @@ function pitchRec() {
         gb: document.querySelector(".gb").innerHTML,
         ab: document.querySelector(".ab").innerHTML,
         bb: document.querySelector(".bb").innerHTML,
-    }
+    };
     changeDifficulty("easy", "pitch");
     loopAudio(true);
     document.querySelector(".rec-title").innerHTML = "Pitch Recognition - " + pitchRecDifficulty;
@@ -846,7 +843,7 @@ function pitchRec() {
                     } else {
                         pianoKey.style.backgroundColor = "black";
                     }
-                }, 300)
+                }, 300);
                 if (!pitchRecWrong) {
                     pitchRecPoints++;
                 }
@@ -856,7 +853,7 @@ function pitchRec() {
                 setTimeout(function() {
                     pauseAudio();
                     pitchRecNextLevel(pitchRecDifficulty);
-                }, 1000)
+                }, 1000);
             } else {
                 var pianoKey = this;
                 pianoKey.style.backgroundColor = "red";
@@ -866,13 +863,13 @@ function pitchRec() {
                     } else {
                         pianoKey.style.backgroundColor = "black";
                     }
-                }, 300)
+                }, 300);
                 if (pitchRecDifficulty == "hard" || pitchRecDifficulty == "extreme" || pitchRecDifficulty == "insane") {
                     pitchRecWrong = true;
                 }
             }
             //-------------
-        })
+        });
     }
 } 
 function noteRec() {
@@ -946,7 +943,7 @@ function noteRec() {
                     } else {
                         pianoKey.style.backgroundColor = "black";
                     }
-                }, 300)
+                }, 300);
                 if (!noteRecWrong) {
                     noteRecPoints++;
                 }
@@ -962,13 +959,13 @@ function noteRec() {
                     } else {
                         pianoKey.style.backgroundColor = "black";
                     }
-                }, 300)
+                }, 300);
                 if (pitchRecDifficulty == "hard" || pitchRecDifficulty == "extreme" || pitchRecDifficulty == "insane") {
                     noteRecWrong = true;
                 }
             }
             //-------------
-        })
+        });
     }
     //store note names
     noteName = {
@@ -984,7 +981,7 @@ function noteRec() {
         gb: document.querySelector(".gb").innerHTML,
         ab: document.querySelector(".ab").innerHTML,
         bb: document.querySelector(".bb").innerHTML,
-    }
+    };
 
 }
 function tool(tool) {
@@ -1005,12 +1002,12 @@ function tool(tool) {
                         document.querySelector(".tuning-headstock").querySelectorAll("button")[i].style.backgroundImage = "linear-gradient(to bottom right, rgb(26, 26, 26), rgb(99, 99, 99))";
                     }
                     this.style.backgroundImage = "linear-gradient(to bottom left, rgb(4, 116, 4), rgb(13, 196, 19))";
-                    if (toggled) {return};
+                    if (toggled) {return;};
                     timeout = setTimeout(function() {
                         button.style.backgroundImage = "linear-gradient(to bottom right, rgb(26, 26, 26), rgb(99, 99, 99))";
-                    }, 5000)
+                    }, 5000);
 
-                })
+                });
             }
         }
         updateCircles();
@@ -1020,20 +1017,20 @@ function tool(tool) {
                 toggled = true;
                 loopAudio(true);
                 document.querySelector(".switch").style.backgroundColor = "dodgerblue";
-                document.querySelector(".slider").style = "left: unset; right: 6%;"
+                document.querySelector(".slider").style = "left: unset; right: 6%";
                 window.clearTimeout(timeout);
             } else {
                 toggled = false;
                 loopAudio(false);
                 pauseAudio();
                 document.querySelector(".switch").style.backgroundColor = "darkgrey";
-                document.querySelector(".slider").style = "left: 6%; right: unset;"
+                document.querySelector(".slider").style = "left: 6%; right: unset";
                 for (i = 0; i < 6; i++) {
                     document.querySelector(".tuning-headstock").querySelectorAll("button")[i].style.backgroundImage = "linear-gradient(to bottom right, rgb(26, 26, 26), rgb(99, 99, 99))";
                 }
             }
 
-        })
+        });
     }
     if (tool == "metronome") {
         
@@ -1075,7 +1072,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.e4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "drop-d") {
         document.querySelector(".note-button-first").innerHTML = "D";
@@ -1105,7 +1102,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.e4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "drop-c#") {
         document.querySelector(".note-button-first").innerHTML = "C#";
@@ -1135,7 +1132,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.e4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "drop-c") {
         document.querySelector(".note-button-first").innerHTML = "C";
@@ -1165,7 +1162,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.d4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "drop-b") {
         document.querySelector(".note-button-first").innerHTML = "B";
@@ -1195,7 +1192,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.db4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "drop-a") {
         document.querySelector(".note-button-first").innerHTML = "A";
@@ -1225,7 +1222,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.b3.play();
                 } 
-            })
+            });
         }
     } if (tuning == "dadgad") {
         document.querySelector(".note-button-first").innerHTML = "D";
@@ -1255,7 +1252,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.d4.play();
                 }  
-            })
+            });
         }
     } if (tuning == "half-step-down") {
         document.querySelector(".note-button-first").innerHTML = "E♭";
@@ -1285,7 +1282,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.eb4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "full-step-down") {
         document.querySelector(".note-button-first").innerHTML = "D";
@@ -1315,7 +1312,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.d4.play();
                 } 
-            })
+            });
         }
     } if (tuning == "half-step-up") {
         document.querySelector(".note-button-first").innerHTML = "F";
@@ -1345,7 +1342,7 @@ function changeTuning(tuning) {
                     pauseAudio();
                     note.f4.play();
                 } 
-            })
+            });
         }
     }
 }
@@ -3205,7 +3202,7 @@ function updateListener() {
         alarm.pause();
     }
 
-    })
+    });
     function startTimer() {
 //starts timer
 
@@ -3240,7 +3237,7 @@ interval = setInterval(function() {
             this.innerHTML = "<h3 class='minutes'>" + minutes +"</h3><h3>:</h3><h3 class='seconds'>00</h3>";
             seconds = "00";
         }
-    })
+    });
 }
 
 function timerEnded() {

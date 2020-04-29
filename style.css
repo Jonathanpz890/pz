@@ -764,12 +764,11 @@ p {
 
 
 
-h3 {
+.switch h3 {
     position: absolute;
     margin: 0;
     top: 100%;
     left: -10%;
-
 }
 
 
