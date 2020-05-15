@@ -306,8 +306,52 @@ function extras() {
 }
 function songs() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="songs"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Songs</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"> <button class="skill-option-buttons a-prophecy-button">A Prophecy</button><button class="skill-option-buttons buried-alive-button">Buried Alive</button><button class="skill-option-buttons second-heartbeat-button">Second Heartbeat</button> <button class="skill-option-buttons bulls-bronx-button" style="font-size: 2vw">Bulls in the Bronx</button> <button class="skill-option-buttons a-place-button" style="font-size: 1.7vw">A Place Where You Belong</button> <button class="skill-option-buttons nothing-else-matters-button" style="font-size: 1.8vw">Nothing Else Matters</button> <button class="skill-option-buttons blackened-button">Blackened</button> <button class="skill-option-buttons the-last-fight-button">The Last Fight</button> <button class="skill-option-buttons say-goodnight-button">Say Goodnight</button> </div> <div class="skill-display"> <div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Song</h1></div> <div class="inner-display a-prophecy"> <video class="a-prophecy-video" width="100%" height="100%" controls> <source src="Design/videos/a-prophecy.mp4"> </video> </div> <div class="inner-display buried-alive"> <video class="buried-alive-video" width="100%" height="100%" controls> <source src="Design/videos/buried-alive.mp4"> </video> </div> <div class="inner-display second-heartbeat"> <video class="second-heartbeat-video" width="100%" height="100%" controls> <source src="Design/videos/second-heartbeat.mp4"> </video> </div> <div class="inner-display bulls-bronx"> <video class="bulls-bronx-video" width="100%" height="100%" controls> <source src="Design/videos/bulls-in-the-bronx.mp4"> </video> </div> <div class="inner-display a-place"> <video class="a-place-video" width="100%" height="100%" controls> <source src="Design/videos/a-place-where-you-belong.mp4"> </video> </div> <div class="inner-display nothing-else-matters"> <video class="nothing-else-matters-video" width="100%" height="100%" controls> <source src="Design/videos/nothing-else-matters.mp4"> </video> </div> <div class="inner-display blackened"> <video class="blackened-video" width="100%" height="100%" controls> <source src="Design/videos/blackened.mp4"> </video> </div> <div class="inner-display the-last-fight"> <video class="the-last-fight-video" width="100%" height="100%" controls> <source src="Design/videos/the-last-fight.mp4"> </video> </div> <div class="inner-display say-goodnight"> <video class="say-goodnight-video" width="100%" height="100%" controls> <source src="Design/videos/say-goodnight.mp4"> </video> </div> </div> </div>';
+    document.querySelector("#skill-container").innerHTML = '<div id="songs"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Songs</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"><button class="skill-option-buttons vices-button">Vices</button><button class="skill-option-buttons the-sinner-button">The Sinner</button><button class="skill-option-buttons bulls-bronx-button" style="font-size: 2vw">Bulls in the Bronx</button> <button class="skill-option-buttons a-prophecy-button">A Prophecy</button><button class="skill-option-buttons buried-alive-button">Buried Alive</button><button class="skill-option-buttons second-heartbeat-button">Second Heartbeat</button> <button class="skill-option-buttons a-place-button" style="font-size: 1.7vw">A Place Where You Belong</button> <button class="skill-option-buttons nothing-else-matters-button" style="font-size: 1.8vw">Nothing Else Matters</button> <button class="skill-option-buttons blackened-button">Blackened</button> <button class="skill-option-buttons the-last-fight-button">The Last Fight</button> <button class="skill-option-buttons say-goodnight-button">Say Goodnight</button> </div> <div class="skill-display"> <div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Song</h1></div> <div class="inner-display vices"> <video class="vices-video" width="100%" height="100%" controls> <source src="Design/videos/vices.mp4"> </video> </div><div class="inner-display the-sinner"> <video class="the-sinner-video" width="100%" height="100%" controls> <source src="Design/videos/the-sinner.mp4"> </video> </div><div class="inner-display a-prophecy"> <video class="a-prophecy-video" width="100%" height="100%" controls> <source src="Design/videos/a-prophecy.mp4"> </video> </div> <div class="inner-display buried-alive"> <video class="buried-alive-video" width="100%" height="100%" controls> <source src="Design/videos/buried-alive.mp4"> </video> </div> <div class="inner-display second-heartbeat"> <video class="second-heartbeat-video" width="100%" height="100%" controls> <source src="Design/videos/second-heartbeat.mp4"> </video> </div> <div class="inner-display bulls-bronx"> <video class="bulls-bronx-video" width="100%" height="100%" controls> <source src="Design/videos/bulls-in-the-bronx.mp4"> </video> </div> <div class="inner-display a-place"> <video class="a-place-video" width="100%" height="100%" controls> <source src="Design/videos/a-place-where-you-belong.mp4"> </video> </div> <div class="inner-display nothing-else-matters"> <video class="nothing-else-matters-video" width="100%" height="100%" controls> <source src="Design/videos/nothing-else-matters.mp4"> </video> </div> <div class="inner-display blackened"> <video class="blackened-video" width="100%" height="100%" controls> <source src="Design/videos/blackened.mp4"> </video> </div> <div class="inner-display the-last-fight"> <video class="the-last-fight-video" width="100%" height="100%" controls> <source src="Design/videos/the-last-fight.mp4"> </video> </div> <div class="inner-display say-goodnight"> <video class="say-goodnight-video" width="100%" height="100%" controls> <source src="Design/videos/say-goodnight.mp4"> </video> </div> </div> </div>';
     updateListener();
+    document.querySelector(".vices-button").addEventListener("click", function() {
+        document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "block";
+        document.querySelector(".the-sinner").style.display = "none";
+        document.querySelector(".a-prophecy").style.display = "none";
+        document.querySelector(".buried-alive").style.display = "none";
+        document.querySelector(".second-heartbeat").style.display = "none";
+        document.querySelector(".bulls-bronx").style.display = "none";
+        document.querySelector(".a-place").style.display = "none";
+        document.querySelector(".nothing-else-matters").style.display = "none";
+        document.querySelector(".blackened").style.display = "none";
+        document.querySelector(".the-last-fight").style.display = "none";
+        document.querySelector(".say-goodnight").style.display = "none";
+        document.querySelector(".buried-alive-video").pause();    
+        document.querySelector(".second-heartbeat-video").pause();    
+        document.querySelector(".bulls-bronx-video").pause();    
+        document.querySelector(".a-place-video").pause();    
+        document.querySelector(".nothing-else-matters-video").pause();    
+        document.querySelector(".blackened-video").pause();    
+        document.querySelector(".the-last-fight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();    
+    });
+    document.querySelector(".the-sinner-button").addEventListener("click", function() {
+        document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "block";
+        document.querySelector(".a-prophecy").style.display = "none";
+        document.querySelector(".buried-alive").style.display = "none";
+        document.querySelector(".second-heartbeat").style.display = "none";
+        document.querySelector(".bulls-bronx").style.display = "none";
+        document.querySelector(".a-place").style.display = "none";
+        document.querySelector(".nothing-else-matters").style.display = "none";
+        document.querySelector(".blackened").style.display = "none";
+        document.querySelector(".the-last-fight").style.display = "none";
+        document.querySelector(".say-goodnight").style.display = "none";
+        document.querySelector(".buried-alive-video").pause();    
+        document.querySelector(".second-heartbeat-video").pause();    
+        document.querySelector(".bulls-bronx-video").pause();    
+        document.querySelector(".a-place-video").pause();    
+        document.querySelector(".nothing-else-matters-video").pause();    
+        document.querySelector(".blackened-video").pause();    
+        document.querySelector(".the-last-fight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();    
+    });
     document.querySelector(".a-prophecy-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "block";
@@ -3168,7 +3212,7 @@ function back() {
     document.querySelector("#main-menu").style.display = "block";
     timerGoing = false;
     minutes = "10";
-    seconds = "00"
+    seconds = "00";
     clearInterval(interval);
     pitchRecStart("yes");
     noteRecStart("yes");
@@ -3212,8 +3256,8 @@ interval = setInterval(function() {
         seconds = 60;
     }
     seconds -= 1;
-    if (minutes < 10) {minutes = "0" + minutes;};
-    if (seconds < 10) {seconds = "0" + seconds;};
+    if (minutes < 10) {minutes = "0" + minutes;}
+    if (seconds < 10) {seconds = "0" + seconds;}
     document.querySelector(".seconds").innerHTML = seconds;
     document.querySelector(".minutes").innerHTML = minutes;
     if (minutes < 10) {
