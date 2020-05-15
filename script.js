@@ -352,6 +352,28 @@ function songs() {
         document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();    
     });
+    document.querySelector(".bulls-bronx-button").addEventListener("click", function() {
+        document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
+        document.querySelector(".a-prophecy").style.display = "none";
+        document.querySelector(".buried-alive").style.display = "none";
+        document.querySelector(".second-heartbeat").style.display = "none";
+        document.querySelector(".bulls-bronx").style.display = "block";  
+        document.querySelector(".a-place").style.display = "none";  
+        document.querySelector(".nothing-else-matters").style.display = "none";  
+        document.querySelector(".blackened").style.display = "none";  
+        document.querySelector(".the-last-fight").style.display = "none";  
+        document.querySelector(".say-goodnight").style.display = "none";  
+        document.querySelector(".a-prophecy-video").pause();    
+        document.querySelector(".buried-alive-video").pause();    
+        document.querySelector(".second-heartbeat-video").pause();    
+        document.querySelector(".a-place-video").pause();    
+        document.querySelector(".nothing-else-matters-video").pause();    
+        document.querySelector(".blackened-video").pause();    
+        document.querySelector(".the-last-fight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();    
+    });
     document.querySelector(".a-prophecy-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "block";
@@ -374,6 +396,8 @@ function songs() {
     });
     document.querySelector(".buried-alive-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "block";
         document.querySelector(".second-heartbeat").style.display = "none";
@@ -394,6 +418,8 @@ function songs() {
     });
     document.querySelector(".second-heartbeat-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "none";
         document.querySelector(".second-heartbeat").style.display = "block";
@@ -412,28 +438,10 @@ function songs() {
         document.querySelector(".the-last-fight-video").pause();  
         document.querySelector(".say-goodnight-video").pause();  
     });
-    document.querySelector(".bulls-bronx-button").addEventListener("click", function() {
-        document.querySelector(".source").style.display = "none";
-        document.querySelector(".a-prophecy").style.display = "none";
-        document.querySelector(".buried-alive").style.display = "none";
-        document.querySelector(".second-heartbeat").style.display = "none";
-        document.querySelector(".bulls-bronx").style.display = "block";  
-        document.querySelector(".a-place").style.display = "none";  
-        document.querySelector(".nothing-else-matters").style.display = "none";  
-        document.querySelector(".blackened").style.display = "none";  
-        document.querySelector(".the-last-fight").style.display = "none";  
-        document.querySelector(".say-goodnight").style.display = "none";  
-        document.querySelector(".a-prophecy-video").pause();    
-        document.querySelector(".buried-alive-video").pause();    
-        document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".a-place-video").pause();    
-        document.querySelector(".nothing-else-matters-video").pause();    
-        document.querySelector(".blackened-video").pause();    
-        document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
-    });
     document.querySelector(".a-place-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "none";
         document.querySelector(".second-heartbeat").style.display = "none";
@@ -454,6 +462,8 @@ function songs() {
     });
     document.querySelector(".nothing-else-matters-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "none";
         document.querySelector(".second-heartbeat").style.display = "none";
@@ -474,6 +484,8 @@ function songs() {
     });
     document.querySelector(".blackened-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "none";
         document.querySelector(".second-heartbeat").style.display = "none";
@@ -494,6 +506,8 @@ function songs() {
     });
     document.querySelector(".the-last-fight-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "none";
         document.querySelector(".second-heartbeat").style.display = "none";
@@ -514,6 +528,8 @@ function songs() {
     });
     document.querySelector(".say-goodnight-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
+        document.querySelector(".vices").style.display = "none";
+        document.querySelector(".the-sinner").style.display = "none";
         document.querySelector(".a-prophecy").style.display = "none";
         document.querySelector(".buried-alive").style.display = "none";
         document.querySelector(".second-heartbeat").style.display = "none";
