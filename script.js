@@ -109,8 +109,11 @@ var note = {
     gb6: new Audio("Design/Pitch-recognition/Audio/gb6.m4a")
 };
 var toolbarOpened = false;
+var calOpened = false;
 var toggled = false;
+var queueRunning = false;
 var timeout;
+
 
 document.addEventListener("keydown", function(e) {
     if (e.key == "Escape" && document.querySelector("#open-screen").style.display === "none") {
@@ -306,8 +309,7 @@ function extras() {
 }
 function songs() {
     document.querySelector("#main-menu").style.display = "none";
-    document.querySelector("#skill-container").innerHTML = '<div id="songs"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Songs</h1> </div> <div class="timer-container"> <div class="timer"> <h3 class="minutes">10</h3> <h3>:</h3> <h3 class="seconds">00</h3> </div><button onclick="editTimer(1)" class="timer-edit"></button> </div> </div> <div class="skill-options"><button class="skill-option-buttons vices-button">Vices</button><button class="skill-option-buttons the-sinner-button">The Sinner</button><button class="skill-option-buttons bulls-bronx-button" style="font-size: 2vw">Bulls in the Bronx</button> <button class="skill-option-buttons a-prophecy-button">A Prophecy</button><button class="skill-option-buttons buried-alive-button">Buried Alive</button><button class="skill-option-buttons second-heartbeat-button">Second Heartbeat</button> <button class="skill-option-buttons a-place-button" style="font-size: 1.7vw">A Place Where You Belong</button> <button class="skill-option-buttons nothing-else-matters-button" style="font-size: 1.8vw">Nothing Else Matters</button> <button class="skill-option-buttons blackened-button">Blackened</button> <button class="skill-option-buttons the-last-fight-button">The Last Fight</button> <button class="skill-option-buttons say-goodnight-button">Say Goodnight</button> </div> <div class="skill-display"> <div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Song</h1></div> <div class="inner-display vices"> <video class="vices-video" width="100%" height="100%" controls> <source src="Design/videos/vices.mp4"> </video> </div><div class="inner-display the-sinner"> <video class="the-sinner-video" width="100%" height="100%" controls> <source src="Design/videos/the-sinner.mp4"> </video> </div><div class="inner-display a-prophecy"> <video class="a-prophecy-video" width="100%" height="100%" controls> <source src="Design/videos/a-prophecy.mp4"> </video> </div> <div class="inner-display buried-alive"> <video class="buried-alive-video" width="100%" height="100%" controls> <source src="Design/videos/buried-alive.mp4"> </video> </div> <div class="inner-display second-heartbeat"> <video class="second-heartbeat-video" width="100%" height="100%" controls> <source src="Design/videos/second-heartbeat.mp4"> </video> </div> <div class="inner-display bulls-bronx"> <video class="bulls-bronx-video" width="100%" height="100%" controls> <source src="Design/videos/bulls-in-the-bronx.mp4"> </video> </div> <div class="inner-display a-place"> <video class="a-place-video" width="100%" height="100%" controls> <source src="Design/videos/a-place-where-you-belong.mp4"> </video> </div> <div class="inner-display nothing-else-matters"> <video class="nothing-else-matters-video" width="100%" height="100%" controls> <source src="Design/videos/nothing-else-matters.mp4"> </video> </div> <div class="inner-display blackened"> <video class="blackened-video" width="100%" height="100%" controls> <source src="Design/videos/blackened.mp4"> </video> </div> <div class="inner-display the-last-fight"> <video class="the-last-fight-video" width="100%" height="100%" controls> <source src="Design/videos/the-last-fight.mp4"> </video> </div> <div class="inner-display say-goodnight"> <video class="say-goodnight-video" width="100%" height="100%" controls> <source src="Design/videos/say-goodnight.mp4"> </video> </div> </div> </div>';
-    updateListener();
+    document.querySelector("#skill-container").innerHTML = '<div id="songs"><div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Songs</h1> </div>     <div class="queue-switch"><span ></span>  </div>        </div> <div class="skill-options"><button class="skill-option-buttons vices-button">Vices</button><button class="skill-option-buttons the-sinner-button">The Sinner</button><button class="skill-option-buttons bulls-bronx-button" style="font-size: 2vw">Bulls in the Bronx</button> <button class="skill-option-buttons a-prophecy-button">A Prophecy</button><button class="skill-option-buttons buried-alive-button">Buried Alive</button><button class="skill-option-buttons second-heartbeat-button">Second Heartbeat</button> <button class="skill-option-buttons a-place-button" style="font-size: 1.7vw">A Place Where You Belong</button> <button class="skill-option-buttons nothing-else-matters-button" style="font-size: 1.8vw">Nothing Else Matters</button> <button class="skill-option-buttons blackened-button">Blackened</button> <button class="skill-option-buttons the-last-fight-button">The Last Fight</button> <button class="skill-option-buttons say-goodnight-button">Say Goodnight</button> </div> <div class="skill-display"> <div class="source"style="width: 100%;height: inherit;text-align: center"><h1 >Choose A Song</h1></div> <div class="inner-display vices"> <video class="vices-video" width="100%" height="100%" controls> <source src="Design/videos/vices.mp4"> </video> </div><div class="inner-display the-sinner"> <video class="the-sinner-video" width="100%" height="100%" controls> <source src="Design/videos/the-sinner.mp4"> </video> </div><div class="inner-display a-prophecy"> <video class="a-prophecy-video" width="100%" height="100%" controls> <source src="Design/videos/a-prophecy.mp4"> </video> </div> <div class="inner-display buried-alive"> <video class="buried-alive-video" width="100%" height="100%" controls> <source src="Design/videos/buried-alive.mp4"> </video> </div> <div class="inner-display second-heartbeat"> <video class="second-heartbeat-video" width="100%" height="100%" controls> <source src="Design/videos/second-heartbeat.mp4"> </video> </div> <div class="inner-display bulls-bronx"> <video class="bulls-bronx-video" width="100%" height="100%" controls> <source src="Design/videos/bulls-in-the-bronx.mp4"> </video> </div> <div class="inner-display a-place"> <video class="a-place-video" width="100%" height="100%" controls> <source src="Design/videos/a-place-where-you-belong.mp4"> </video> </div> <div class="inner-display nothing-else-matters"> <video class="nothing-else-matters-video" width="100%" height="100%" controls> <source src="Design/videos/nothing-else-matters.mp4"> </video> </div> <div class="inner-display blackened"> <video class="blackened-video" width="100%" height="100%" controls> <source src="Design/videos/blackened.mp4"> </video> </div> <div class="inner-display the-last-fight"> <video class="the-last-fight-video" width="100%" height="100%" controls> <source src="Design/videos/the-last-fight.mp4"> </video> </div> <div class="inner-display say-goodnight"> <video class="say-goodnight-video" width="100%" height="100%" controls> <source src="Design/videos/say-goodnight.mp4"> </video> </div> </div> </div>';
     document.querySelector(".vices-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
         document.querySelector(".vices").style.display = "block";
@@ -321,14 +323,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";
         document.querySelector(".the-last-fight").style.display = "none";
         document.querySelector(".say-goodnight").style.display = "none";
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
+        document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".the-sinner-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -343,14 +348,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";
         document.querySelector(".the-last-fight").style.display = "none";
         document.querySelector(".say-goodnight").style.display = "none";
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
+        document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".bulls-bronx-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -365,6 +373,9 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";  
         document.querySelector(".the-last-fight").style.display = "none";  
         document.querySelector(".say-goodnight").style.display = "none";  
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
@@ -372,7 +383,7 @@ function songs() {
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".a-prophecy-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -385,14 +396,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";
         document.querySelector(".the-last-fight").style.display = "none";
         document.querySelector(".say-goodnight").style.display = "none";
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
+        document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".buried-alive-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -407,13 +421,16 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";    
         document.querySelector(".the-last-fight").style.display = "none";    
         document.querySelector(".say-goodnight").style.display = "none";    
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
+        document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();  
-        document.querySelector(".a-place-video").pause();  
-        document.querySelector(".nothing-else-matters-video").pause();  
-        document.querySelector(".blackened-video").pause();  
-        document.querySelector(".the-last-fight-video").pause();  
+        document.querySelector(".a-place-video").pause();    
+        document.querySelector(".nothing-else-matters-video").pause();    
+        document.querySelector(".blackened-video").pause();    
+        document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".second-heartbeat-button").addEventListener("click", function() {
@@ -429,13 +446,16 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";   
         document.querySelector(".the-last-fight").style.display = "none";   
         document.querySelector(".say-goodnight").style.display = "none";   
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();  
-        document.querySelector(".a-place-video").pause();  
-        document.querySelector(".nothing-else-matters-video").pause();  
-        document.querySelector(".blackened-video").pause();  
-        document.querySelector(".the-last-fight-video").pause();  
+        document.querySelector(".second-heartbeat-video").pause();    
+        document.querySelector(".a-place-video").pause();    
+        document.querySelector(".nothing-else-matters-video").pause();    
+        document.querySelector(".blackened-video").pause();    
+        document.querySelector(".the-last-fight-video").pause();    
         document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".a-place-button").addEventListener("click", function() {
@@ -451,14 +471,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";  
         document.querySelector(".the-last-fight").style.display = "none";  
         document.querySelector(".say-goodnight").style.display = "none";  
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
+        document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".nothing-else-matters-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -473,14 +496,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";  
         document.querySelector(".the-last-fight").style.display = "none";  
         document.querySelector(".say-goodnight").style.display = "none";  
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
+        document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".blackened-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -495,14 +521,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "block";  
         document.querySelector(".the-last-fight").style.display = "none";  
         document.querySelector(".say-goodnight").style.display = "none";  
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
+        document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".the-last-fight-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -517,14 +546,17 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";  
         document.querySelector(".the-last-fight").style.display = "block";  
         document.querySelector(".say-goodnight").style.display = "none";  
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
-        document.querySelector(".say-goodnight-video").pause();    
+        document.querySelector(".the-last-fight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
     document.querySelector(".say-goodnight-button").addEventListener("click", function() {
         document.querySelector(".source").style.display = "none";
@@ -539,15 +571,129 @@ function songs() {
         document.querySelector(".blackened").style.display = "none";  
         document.querySelector(".the-last-fight").style.display = "none";  
         document.querySelector(".say-goodnight").style.display = "block";  
+        document.querySelector(".vices-video").pause();    
+        document.querySelector(".the-sinner-video").pause();
+        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-prophecy-video").pause();    
         document.querySelector(".buried-alive-video").pause();    
         document.querySelector(".second-heartbeat-video").pause();    
-        document.querySelector(".bulls-bronx-video").pause();    
         document.querySelector(".a-place-video").pause();    
         document.querySelector(".nothing-else-matters-video").pause();    
         document.querySelector(".blackened-video").pause();    
         document.querySelector(".the-last-fight-video").pause();    
+        document.querySelector(".say-goodnight-video").pause();  
     });
+    //move to next video when video eneds
+    document.querySelector(".queue-switch").addEventListener("click", function() {
+        if (!queueRunning) {
+            queueRunning = true;
+            queue(true);
+            document.querySelector(".queue-switch").style.backgroundColor = "rgb(62, 62, 62)";
+            document.querySelector(".queue-switch>span").style = "background-color: white; left: 2.75vw";
+        }
+        else if (queueRunning) {
+            queueRunning = false;
+            queue(false);
+            document.querySelector(".queue-switch").style.backgroundColor = "white";
+            document.querySelector(".queue-switch>span").style = "background-color: rgb(62, 62, 62); left: 0.25vw";
+        }
+    });
+    function queue(boolean) {
+        if (boolean) {
+            document.querySelector(".vices-video").addEventListener("ended", function() {
+                document.querySelector(".the-sinner-button").click();
+                document.querySelector(".the-sinner-video").play();
+            });
+            document.querySelector(".the-sinner-video").addEventListener("ended", function() {
+                document.querySelector(".bulls-bronx-button").click();
+                document.querySelector(".bulls-bronx-video").play();
+            });
+            document.querySelector(".bulls-bronx-video").addEventListener("ended", function() {
+                document.querySelector(".a-prophecy-button").click();
+                document.querySelector(".a-prophecy-video").play();
+            });
+            document.querySelector(".a-prophecy-video").addEventListener("ended", function() {
+                document.querySelector(".buried-alive-button").click();
+                document.querySelector(".buried-alive-video").play();
+            });
+            document.querySelector(".buried-alive-video").addEventListener("ended", function() {
+                document.querySelector(".second-heartbeat-button").click();
+                document.querySelector(".second-heartbeat-video").play();
+            });
+            document.querySelector(".second-heartbeat-video").addEventListener("ended", function() {
+                document.querySelector(".a-place-button").click();
+                document.querySelector(".a-place-video").play();
+            });
+            document.querySelector(".a-place-video").addEventListener("ended", function() {
+                document.querySelector(".nothing-else-matters-button").click();
+                document.querySelector(".nothing-else-matters-video").play();
+            });
+            document.querySelector(".nothing-else-matters-video").addEventListener("ended", function() {
+                document.querySelector(".blackened-button").click();
+                document.querySelector(".blackened-video").play();
+            });
+            document.querySelector(".blackened-video").addEventListener("ended", function() {
+                document.querySelector(".the-last-fight-button").click();
+                document.querySelector(".the-last-fight-video").play();
+            });
+            document.querySelector(".the-last-fight-video").addEventListener("ended", function() {
+                document.querySelector(".say-goodnight-button").click();
+                document.querySelector(".say-goodnight-video").play();
+            });
+            document.querySelector(".say-goodnight-video").addEventListener("ended", function() {
+                document.querySelector(".vices-button").click();
+                document.querySelector(".vices-video").play();
+            });
+
+        } if (!boolean) {
+            document.querySelector(".vices-video").removeEventListener("ended", function() {
+                document.querySelector(".the-sinner-button").click();
+                document.querySelector(".the-sinner-video").play();
+            });
+            document.querySelector(".the-sinner-video").removeEventListener("ended", function() {
+                document.querySelector(".bulls-bronx-button").click();
+                document.querySelector(".bulls-bronx-video").play();
+            });
+            document.querySelector(".bulls-bronx-video").removeEventListener("ended", function() {
+                document.querySelector(".a-prophecy-button").click();
+                document.querySelector(".a-prophecy-video").play();
+            });
+            document.querySelector(".a-prophecy-video").removeEventListener("ended", function() {
+                document.querySelector(".buried-alive-button").click();
+                document.querySelector(".buried-alive-video").play();
+            });
+            document.querySelector(".buried-alive-video").removeEventListener("ended", function() {
+                document.querySelector(".second-heartbeat-button").click();
+                document.querySelector(".second-heartbeat-video").play();
+            });
+            document.querySelector(".second-heartbeat-video").removeEventListener("ended", function() {
+                document.querySelector(".a-place-button").click();
+                document.querySelector(".a-place-video").play();
+            });
+            document.querySelector(".a-place-video").removeEventListener("ended", function() {
+                document.querySelector(".nothing-else-matters-button").click();
+                document.querySelector(".nothing-else-matters-video").play();
+            });
+            document.querySelector(".nothing-else-matters-video").removeEventListener("ended", function() {
+                document.querySelector(".blackened-button").click();
+                document.querySelector(".blackened-video").play();
+            });
+            document.querySelector(".blackened-video").removeEventListener("ended", function() {
+                document.querySelector(".the-last-fight-button").click();
+                document.querySelector(".the-last-fight-video").play();
+            });
+            document.querySelector(".the-last-fight-video").removeEventListener("ended", function() {
+                document.querySelector(".say-goodnight-button").click();
+                document.querySelector(".say-goodnight-video").play();
+            });
+            document.querySelector(".say-goodnight-video").removeEventListener("ended", function() {
+                document.querySelector(".vices-button").click();
+                document.querySelector(".vices-video").play();
+            });
+
+        }
+  
+    }
 }
 function solos() {
     document.querySelector("#main-menu").style.display = "none";
@@ -1048,7 +1194,7 @@ function tool(tool) {
     openToolbar();
     if (tool == "tuner") {
         document.querySelector("#main-menu").style.display = "none";
-        document.querySelector("#skill-container").innerHTML = '<div id="tuner"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Tuner</h1> </div> </div> <div class="skill-options"> <button class="skill-option-buttons" onclick="changeTuning(\'standard\')">Standard <span class="tooltip-text">E A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-d\')">Drop D <span class="tooltip-text">D A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-c#\')">Drop C# <span class="tooltip-text">C# A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-c\')">Drop C <span class="tooltip-text">C G C F A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-b\')">Drop B <span class="tooltip-text">B G♭ B E A♭ D♭</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-a\')">Drop A <span class="tooltip-text">A E A D G♭ B</button> <button class="skill-option-buttons" onclick="changeTuning(\'dadgad\')">DADGAD <span class="tooltip-text">D A D G A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'half-step-down\')">Half Step Down <span class="tooltip-text">E♭ A♭ D♭ G♭ B♭ A♭</button> <button class="skill-option-buttons" onclick="changeTuning(\'full-step-down\')">Full Step Down <span class="tooltip-text">D G C F A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'half-step-up\')">Half Step Up <span class="tooltip-text">F A# D# G# C F</button> </div> <div class="skill-display"> <div class="inner-display tuning-headstock"><div class="switch"><span class="slider"></span><h3>Loop</h3></div> <div class="note-circles1"><button class="note-button-third" >D</button> <button class="note-button-second" >A</button> <button class="note-button-first" >E</button> </div> <img src="Design/headstock.png" id="headstock"> <div class="note-circles2"> <button class="note-button-fourth" >G</button> <button class="note-button-fifth" >B</button> <button class="note-button-sixth" >e</button> </div> </div> </div> </div>';
+        document.querySelector("#skill-container").innerHTML = '<div id="tuner"> <div class="top-table"> <div class="back-td"> <button onclick="back()" class="back-button"> < Back to menu</button> </div> <div class="title-td"> <h1 class="skill-title">Tuner</h1> </div> </div> <div class="skill-options"> <button class="skill-option-buttons" onclick="changeTuning(\'standard\')">Standard <span class="tooltip-text">E A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-d\')">Drop D <span class="tooltip-text">D A D G B E</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-c#\')">Drop C# <span class="tooltip-text">C# G# C# F# A# D#</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-c\')">Drop C <span class="tooltip-text">C G C F A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-b\')">Drop B <span class="tooltip-text">B G♭ B E A♭ D♭</button> <button class="skill-option-buttons" onclick="changeTuning(\'drop-a\')">Drop A <span class="tooltip-text">A E A D G♭ B</button> <button class="skill-option-buttons" onclick="changeTuning(\'dadgad\')">DADGAD <span class="tooltip-text">D A D G A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'half-step-down\')">Half Step Down <span class="tooltip-text">E♭ A♭ D♭ G♭ B♭ A♭</button> <button class="skill-option-buttons" onclick="changeTuning(\'full-step-down\')">Full Step Down <span class="tooltip-text">D G C F A D</button> <button class="skill-option-buttons" onclick="changeTuning(\'half-step-up\')">Half Step Up <span class="tooltip-text">F A# D# G# C F</button> </div> <div class="skill-display"> <div class="inner-display tuning-headstock"><div class="switch"><span class="slider"></span><h3>Loop</h3></div> <div class="note-circles1"><button class="note-button-third" >D</button> <button class="note-button-second" >A</button> <button class="note-button-first" >E</button> </div> <img src="Design/headstock.png" id="headstock"> <div class="note-circles2"> <button class="note-button-fourth" >G</button> <button class="note-button-fifth" >B</button> <button class="note-button-sixth" >e</button> </div> </div> </div> </div>';
         changeTuning('standard');
         function updateCircles() {
             var circleWidth = document.querySelector(".note-button-third").offsetHeight + "px";
@@ -1166,11 +1312,11 @@ function changeTuning(tuning) {
         }
     } if (tuning == "drop-c#") {
         document.querySelector(".note-button-first").innerHTML = "C#";
-        document.querySelector(".note-button-second").innerHTML = "A";
-        document.querySelector(".note-button-third").innerHTML = "D";
-        document.querySelector(".note-button-fourth").innerHTML = "G";
-        document.querySelector(".note-button-fifth").innerHTML = "B";
-        document.querySelector(".note-button-sixth").innerHTML = "e";
+        document.querySelector(".note-button-second").innerHTML = "G#";
+        document.querySelector(".note-button-third").innerHTML = "C#";
+        document.querySelector(".note-button-fourth").innerHTML = "F#";
+        document.querySelector(".note-button-fifth").innerHTML = "A#";
+        document.querySelector(".note-button-sixth").innerHTML = "D#";
         for (i = 0; i < 6; i++) {
             document.querySelector(".tuning-headstock").querySelectorAll("button")[i].addEventListener("click", function() {
                 if (this.classList[0] == "note-button-first") {
@@ -1178,19 +1324,19 @@ function changeTuning(tuning) {
                     note.db2.play();
                 } if (this.classList[0] == "note-button-second") {
                     pauseAudio();
-                    note.a2.play();
+                    note.ab2.play();
                 } if (this.classList[0] == "note-button-third") {
                     pauseAudio();
-                    note.d3.play();
+                    note.db3.play();
                 } if (this.classList[0] == "note-button-fourth") {
                     pauseAudio();
-                    note.g3.play();
+                    note.gb3.play();
                 } if (this.classList[0] == "note-button-fifth") {
                     pauseAudio();
-                    note.b3.play();
+                    note.bb3.play();
                 } if (this.classList[0] == "note-button-sixth") {
                     pauseAudio();
-                    note.e4.play();
+                    note.eb4.play();
                 } 
             });
         }
@@ -3720,6 +3866,19 @@ function openToolbar() {
     } else {
         toolbarOpened = false;
         document.querySelector(".toolbar").style.right = "-25%";
+        document.querySelector("#main-menu").style.left = "0";
+    }
+}
+function openCal() {
+    if (!calOpened) {
+        calOpened = true;
+        document.querySelector("#calendar").style.left = "0";
+        document.querySelector("#main-menu").style.left = "70%";
+    }
+    else if (calOpened) {
+        calOpened = false;
+        document.querySelector("#calendar").style.left = "-70%";
+        document.querySelector("#main-menu").style.right = "auto";
         document.querySelector("#main-menu").style.left = "0";
     }
 }

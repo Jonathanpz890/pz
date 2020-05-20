@@ -15,6 +15,11 @@
     </div>   
 
     <div id="main-menu">
+        <button class="calendar-button" onclick="openCal()"></button>
+        <div id="calendar">
+            <div class="cal-shadow"></div>
+            <iframe src="https://calendar.google.com/calendar/embed?src=jonathanpz890%40gmail.com&ctz=Asia%2FJerusalem" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
         <div class="toolbar">
             <button onclick="tool('tuner')">Tuner</button>
             <button onclick="tool('metronome')">Metronome</button>
@@ -22,26 +27,26 @@
             <button onclick="tool('chord-progression')">Chord Progression Generator</button>
         </div>
         <button class="toolbox-button" onclick="openToolbar()"></button>
-    <table id="menu-table">
-        <tbody>
-            <tr>
-                <td> <button onclick="alternate()" class="skill alternate">Alternate Picking<br><br>10 Minutes</button>
-                </td>
-                <td> <button onclick="sweep()" class="skill sweeping">Sweep Picking<br><br>10 Minutes</button> </td>
-                <td> <button onclick="legato()" class="skill pentatonics">Legato Picking<br><br>10 Minutes</button>
-                </td>
-            </tr>
-            <tr>
-                <td> <button onclick="economy()" class="skill economy">Economy Picking<br><br>10 Minutes</button> </td>
-                <td> <button onclick="tapping()" class="skill tapping">Tapping<br><br>10 Minutes</button> </td>
-                <td> <button onclick="pentatonics()" class="skill pentatonics">Pentatonics<br><br>10 Minutes</button>
-                </td>
-            </tr>
-            <tr style="width: 400px">
-                <td colspan="3"><button class="skill extra-button" onclick="extras()">Extras</button></td>
-            </tr>
-        </tbody>
-    </table>
+        <table id="menu-table">
+            <tbody>
+                <tr>
+                    <td> <button onclick="alternate()" class="skill alternate">Alternate Picking<br><br>10 Minutes</button>
+                    </td>
+                    <td> <button onclick="sweep()" class="skill sweeping">Sweep Picking<br><br>10 Minutes</button> </td>
+                    <td> <button onclick="legato()" class="skill pentatonics">Legato Picking<br><br>10 Minutes</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <button onclick="economy()" class="skill economy">Economy Picking<br><br>10 Minutes</button> </td>
+                    <td> <button onclick="tapping()" class="skill tapping">Tapping<br><br>10 Minutes</button> </td>
+                    <td> <button onclick="pentatonics()" class="skill pentatonics">Pentatonics<br><br>10 Minutes</button>
+                    </td>
+                </tr>
+                <tr style="width: 400px">
+                    <td colspan="3"><button class="skill extra-button" onclick="extras()">Extras</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 
